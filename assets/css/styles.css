@@ -768,3 +768,16 @@ body{letter-spacing:0}
 .wire-consult mark{background:#771d51;color:#fff;font-weight:650;padding:1px 6px;border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .addr-note{display:inline-block;margin-top:6px;font-size:.8125rem;color:var(--soft)}
 @media (min-width:901px){.page-hero .lead.lead-wide{max-width:none;white-space:nowrap}}
+/* Mobile homepage hero: a little less top space, more bottom space */
+@media (max-width:700px){.hero-inner{padding-top:calc(17svh + 24px);padding-bottom:56px}}
+/* New logo with nail-swatch fan (wider viewBox): keep wordmark the same size */
+.brand .logo{width:265px}
+.footer-brand .logo{width:264px}
+@media (max-width:900px){.brand .logo{width:212px}}
+/* Large screens: bring homepage service photos into the first view */
+@media (min-width:1600px){
+  .hero-bg .hero-inner{min-height:min(600px,64svh)}
+  #services{padding-top:64px}
+  #services .section-head{margin-bottom:32px}
+  #services .service-card .media{aspect-ratio:16/9}
+}
