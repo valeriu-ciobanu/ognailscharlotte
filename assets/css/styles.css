@@ -41,7 +41,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:380;color:var(--plum)}
 p{text-wrap:pretty}
 
 .container{width:min(1200px,calc(100% - 96px));margin-inline:auto}
-.narrow{max-width:760px}
+.narrow{max-width:880px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip-link{position:fixed;left:16px;top:-80px;z-index:200;background:var(--plum);color:#fff;padding:10px 18px;border-radius:6px}
 .skip-link:focus{top:12px}
@@ -590,3 +590,181 @@ body{letter-spacing:0}
   .nav-open .has-overlay-header:not(.scrolled) .site-header{border-bottom-color:var(--line)}
   .nav-open .has-overlay-header:not(.scrolled) .nav-toggle .bar{background:transparent}
 }
+
+/* ---------- Homepage: full-width foot care band ---------- */
+.footcare-band{display:grid;grid-template-columns:1fr 1fr;min-height:560px;background:#3b0f28;color:#fff}
+.footcare-band-media{position:relative;overflow:hidden}
+.footcare-band-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%}
+.footcare-band-copy{padding:88px max(48px,calc((100vw - 1200px)/2)) 88px 72px;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(120% 120% at 100% 0%,#932f6d 0%,#771d51 45%,#4a1232 100%)}
+.footcare-band-copy h2{color:#fff;margin:18px 0 18px;max-width:520px}
+.footcare-band-copy h2 em{color:#f7e58a}
+.footcare-band-copy>p{color:#f2dbe7;font-size:1.125rem;line-height:1.75;max-width:520px}
+.footcare-tags{display:flex;flex-wrap:wrap;gap:8px 18px;margin:24px 0 4px;color:#fff;font-size:.9375rem}
+.footcare-tags li{display:flex;align-items:center;gap:8px}
+.footcare-tags li::before{content:"";width:6px;height:6px;border-radius:50%;background:#f4da01}
+.footcare-band .hero-actions{justify-content:flex-start;align-items:center;gap:20px}
+.footcare-price{color:#f2dbe7;font-size:.9375rem}
+.footcare-price strong{font-family:var(--serif);font-weight:400;font-size:1.75rem;color:#fff;margin:0 2px}
+
+/* ---------- Foot care page ---------- */
+.disclaimer{display:flex;gap:10px;align-items:flex-start;margin-top:22px;padding-top:18px;border-top:1px solid #ead6e1;font-size:.875rem;line-height:1.6;color:var(--muted)}
+.disclaimer .icon{width:17px;height:17px;margin-top:2px;color:var(--plum-2)}
+.fc-figure{border-radius:16px;overflow:hidden;aspect-ratio:4/4.2}
+.fc-figure img{width:100%;height:100%;object-fit:cover}
+.fc-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px;counter-reset:none}
+.fc-steps li{position:relative;padding-top:22px;border-top:2px solid var(--plum)}
+.fc-num{display:block;font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--plum-2);margin-bottom:10px}
+.fc-steps h3{font-size:1.5rem;margin-bottom:10px}
+.fc-steps p{color:var(--muted);line-height:1.75}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ba-item{margin:0}
+.ba-img{display:block;width:100%;padding:0;border:0;border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:#eee;cursor:zoom-in}
+.ba-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.ba-img:hover img{transform:scale(1.03)}
+.ba-item figcaption{display:flex;gap:12px;align-items:baseline;margin-top:14px;color:var(--muted);font-size:.9375rem;line-height:1.6}
+.ba-tag{flex-shrink:0;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.ba-tag.ba-after{color:var(--plum)}
+#pricing .price-intro .button{margin-top:4px}
+
+@media (max-width:900px){
+  .footcare-band{grid-template-columns:1fr;min-height:0}
+  .footcare-band-media{aspect-ratio:16/10}
+  .footcare-band-copy{padding:56px 32px 64px}
+  .fc-steps{grid-template-columns:1fr 1fr;gap:32px}
+  .ba{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:600px){
+  .footcare-band-copy{padding:48px 16px 56px}
+  .fc-steps{grid-template-columns:1fr}
+}
+.ba-feature{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:48px;align-items:center;margin-top:56px;padding-top:56px;border-top:1px solid var(--line-strong)}
+.ba-img.ba-portrait{aspect-ratio:3/4}
+.ba-feature h3{font-size:clamp(26px,2.4vw,34px);margin:12px 0 14px}
+.ba-feature p{color:var(--muted);line-height:1.75;max-width:560px}
+.ba-feature .ba-note{margin-top:14px;font-size:.9375rem;color:var(--soft)}
+@media (max-width:900px){.ba-feature{grid-template-columns:1fr;gap:24px;margin-top:40px;padding-top:40px}.ba-img.ba-portrait{max-width:420px}}
+
+/* Homepage foot care band: plum gradient, copy left, before/after right */
+.fcb{position:relative;overflow:hidden;color:#fff;padding:104px 0;background:radial-gradient(90% 120% at 100% 0%,#9b3474 0%,transparent 55%),linear-gradient(135deg,#2c0a1e 0%,#4a1232 45%,#771d51 100%)}
+.fcb-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:center}
+.fcb-copy h2{color:#fff;margin:18px 0 18px;max-width:540px}
+.fcb-copy h2 em{color:#f7e58a}
+.fcb-copy>p{color:#f2dbe7;font-size:1.125rem;line-height:1.75;max-width:540px}
+.fcb .hero-actions{justify-content:flex-start;align-items:center;gap:20px}
+.fcb-media{position:relative;display:block;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08);max-width:460px;justify-self:end;width:100%}
+.fcb-media img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:900px){
+  .fcb{padding:72px 0}
+  .fcb-grid{grid-template-columns:1fr;gap:40px}
+  .fcb-media{justify-self:start;max-width:420px}
+}
+
+/* Titanium wire step-by-step */
+.wire{margin-top:64px;padding-top:56px;border-top:1px solid var(--line-strong)}
+.wire-head{max-width:680px;margin-bottom:36px}
+.wire-head h3{font-size:clamp(28px,2.6vw,38px);margin:12px 0 14px}
+.wire-head p{color:var(--muted);line-height:1.75}
+.wire-head .ba-note{margin-top:12px;font-size:.9375rem;color:var(--soft)}
+.wire-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px 20px;counter-reset:none}
+.wire-steps li{display:flex;flex-direction:column}
+.wire-steps .ba-img{aspect-ratio:4/5;margin-bottom:14px}
+.wire-num{font-family:var(--serif);font-style:italic;color:var(--plum-2);font-size:1.125rem;line-height:1}
+.wire-steps strong{font-family:var(--serif);font-weight:400;font-size:1.375rem;margin:6px 0 4px;letter-spacing:-.01em}
+.wire-cap{color:var(--muted);font-size:.9375rem;line-height:1.6}
+@media (max-width:900px){.wire-steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px}}
+@media (max-width:600px){.wire-steps strong{font-size:1.125rem}.wire-cap{font-size:.875rem}}
+.wire-group+.wire-group{margin-top:48px}
+.wire-visit{font-family:var(--sans);font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--plum);margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line-strong)}
+.wire-steps{grid-template-columns:repeat(5,minmax(0,1fr));gap:28px 16px}
+.wire-steps strong{font-size:1.1875rem}
+.wire-cap{font-size:.875rem}
+@media (max-width:1100px){.wire-steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:600px){.wire-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.price-row .price .price-ask{font-family:var(--sans);font-size:.875rem;font-weight:600;letter-spacing:.01em;color:var(--plum)}
+.price-row .price small.per{margin:4px 0 0}
+@media (max-width:600px){.price-row .price small.per{margin:0 0 0 6px}}
+
+/* Foot care hero: stacked before / after */
+.portrait-ba{aspect-ratio:880/974}
+.portrait-ba img{object-position:50% 50%}
+.hero-ba-chip{position:absolute;left:14px;background:#fffffff0;color:var(--muted);border-radius:999px;padding:6px 12px;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.hero-ba-chip.is-after{color:var(--plum)}
+
+/* Titanium wire: own full-width dark band */
+.wire-band{position:relative;color:#fff;padding:104px 0;background:radial-gradient(80% 120% at 0% 0%,#9b3474 0%,transparent 55%),linear-gradient(135deg,#2c0a1e 0%,#4a1232 50%,#6a1a48 100%)}
+.wire-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.wire-intro{position:sticky;top:120px}
+.wire-intro h2{color:#fff;margin:18px 0 18px}
+.wire-intro h2 em{color:#f7e58a}
+.wire-intro>p{color:#f2dbe7;font-size:1.0625rem;line-height:1.75}
+.wire-intro .wire-note{font-size:.9375rem;color:#e3c3d4;margin:16px 0 28px;padding-left:14px;border-left:2px solid #f7e58a}
+.wire-card{margin:0}
+.wire-card .ba-img{aspect-ratio:600/1064;border-radius:16px;box-shadow:0 30px 60px -24px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08)}
+.wire-card figcaption{margin-top:18px}
+.wire-tag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3b0f28;background:#f7e58a;border-radius:999px;padding:5px 12px;margin-bottom:10px}
+.wire-card p{color:#f2dbe7;line-height:1.7;font-size:.9875rem}
+@media (max-width:1000px){.wire-grid{grid-template-columns:1fr 1fr}.wire-intro{grid-column:1/-1;position:static;max-width:640px}}
+@media (max-width:640px){.wire-band{padding:72px 0}.wire-grid{grid-template-columns:1fr;gap:36px}.wire-card{max-width:420px}}
+.ba-next{margin-top:48px;padding-top:48px;border-top:1px solid var(--line-strong)}
+/* Before / after tags as pills */
+.ba-item figcaption{align-items:center}
+.ba-tag{display:inline-block;border-radius:999px;padding:5px 12px;font-size:.72rem;letter-spacing:.12em;background:#f6e7ef;color:var(--plum);line-height:1.2}
+.ba-tag.ba-after{background:var(--plum);color:#fff}
+.wire-intro .wire-note{margin-bottom:0}
+/* Four-step before/after (corn removal) */
+.ba-quad{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ba-quad .ba-img{aspect-ratio:3/4}
+.ba-quad figcaption{flex-direction:column;align-items:flex-start;gap:8px}
+.ba-tag.ba-step{background:#fff;color:var(--plum);box-shadow:inset 0 0 0 1px #e7c9d8}
+
+@media (max-width:900px){.ba-quad{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Before/after pairs: two pairs per row */
+.ba-pairs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 40px}
+.ba-pairs .ba{gap:12px}
+.ba-pairs figcaption,.ba-quad figcaption{flex-direction:column;align-items:flex-start;gap:8px}
+@media (max-width:900px){.ba-pairs{grid-template-columns:1fr;gap:40px}.ba-pairs .ba{grid-template-columns:1fr 1fr}}
+/* Before/after pairs: divider lines (any number of pairs) */
+.ba-pairs{gap:0}
+.ba-pairs>.ba{padding:40px 0;border-bottom:1px solid var(--line-strong)}
+.ba-pairs>.ba:nth-child(odd){padding-right:40px;border-right:1px solid var(--line-strong)}
+.ba-pairs>.ba:nth-child(even){padding-left:40px}
+.ba-pairs>.ba:nth-child(-n+2){padding-top:0}
+.ba-pairs>.ba:nth-last-child(-n+2):nth-child(odd),.ba-pairs>.ba:nth-last-child(-n+2):nth-child(odd)~.ba,.ba-pairs>.ba:last-child{border-bottom:0;padding-bottom:0}
+.ba-pairs>.ba:last-child:nth-child(odd){border-right:0}
+@media (max-width:900px){
+  .ba-pairs>.ba,.ba-pairs>.ba:nth-child(odd),.ba-pairs>.ba:nth-child(even){padding:32px 0;border-right:0;border-bottom:1px solid var(--line-strong)}
+  .ba-pairs>.ba:first-child{padding-top:0}
+  .ba-pairs>.ba:last-child{border-bottom:0;padding-bottom:0}
+}
+/* Homepage hero description: two lines on desktop */
+.hero-bg .hero-description{max-width:680px}
+/* Gallery filters: larger pills */
+.filters{gap:10px}
+.filter{padding:11px 20px;min-height:46px;border-radius:999px;border:1px solid var(--line-strong);background:#fff;font-size:1rem;font-weight:560;color:#463b42}
+.filter:hover{border-color:#d7b6c8;background:#fbf3f7;color:var(--plum)}
+.filter[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
+.filter .count{font-size:.8125rem}
+@media (max-width:640px){.filter{font-size:.9375rem;padding:9px 16px;min-height:42px}.filters{gap:8px}}
+/* Services "Why clients choose it": larger checks aligned to first line */
+.checks li{align-items:flex-start}
+.checks li .icon{flex:0 0 26px;width:26px;height:26px;stroke-width:1.6;margin-top:calc((1.6em - 26px) / 2)}
+.checks li{gap:14px}
+/* Homepage hero: tighter vertical space on desktop */
+@media (min-width:901px){.hero-inner{min-height:min(700px,86svh);padding:calc(var(--header-h) + 56px) 0 72px}}
+/* Advanced pedicure hero: highlight audience */
+.fc-who{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:22px}
+.who-pill{display:inline-flex;align-items:center;padding:6px 14px;border-radius:8px;background:#f7e58a;color:#3b0f28;font-weight:650;font-size:1rem;letter-spacing:.01em}
+.fc-from{color:var(--muted)}
+.fc-from strong{font-family:var(--serif);font-weight:400;font-size:1.5rem;color:var(--ink);margin-left:2px}
+#results .section-head>p.results-note{max-width:none;font-size:1rem;line-height:1.65}
+/* Titanium wire: consultation callout */
+.wire-consult{margin:26px 0 0;padding:20px 22px;border-radius:14px;background:#f7e58a;color:#3b0f28;box-shadow:0 18px 40px -22px rgba(0,0,0,.6)}
+.wire-consult strong{display:block;font-family:var(--serif);font-weight:500;font-size:1.3rem;line-height:1.25;margin-bottom:8px;color:#3b0f28}
+.wire-consult p{margin:0;font-size:1rem;line-height:1.65;color:#4a1232}
+.wire-consult + .wire-note{margin-top:22px}
+.wire-consult-link{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:650;color:#771d51;border-bottom:1.5px solid currentColor;padding-bottom:2px}
+.wire-consult-link .icon{width:18px;height:18px}
+.wire-consult-link:hover{color:#3b0f28}
+.wire-consult mark{background:#771d51;color:#fff;font-weight:650;padding:1px 6px;border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.addr-note{display:inline-block;margin-top:6px;font-size:.8125rem;color:var(--soft)}
+@media (min-width:901px){.page-hero .lead.lead-wide{max-width:none;white-space:nowrap}}
