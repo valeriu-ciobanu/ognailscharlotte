@@ -781,3 +781,20 @@ body{letter-spacing:0}
   #services .section-head{margin-bottom:32px}
   #services .service-card .media{aspect-ratio:16/9}
 }
+/* Homepage: professional brands band */
+.brands{padding:56px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.brands-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:56px;align-items:center}
+.brands-copy h2{margin:16px 0 12px;font-size:clamp(28px,2.6vw,38px)}
+.brands-copy p{color:var(--muted);line-height:1.7;max-width:460px}
+.brand-list{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.brand-tile{border:1px solid var(--line-strong);border-radius:16px;padding:26px 24px;background:var(--bg,#fbf7f5)}
+.brand-logo{display:flex;align-items:center;height:44px;margin-bottom:14px}
+.brand-logo img{max-height:44px;max-width:170px;width:auto;height:auto;object-fit:contain}
+.brand-logo img + .brand-word{display:none}
+.brand-word{font-family:var(--sans);font-weight:700;letter-spacing:.22em;font-size:1.3rem;color:var(--ink)}
+.brand-tile p{color:var(--muted);font-size:.9375rem;line-height:1.6}
+@media (max-width:900px){.brands-grid{grid-template-columns:1fr;gap:28px}}
+@media (max-width:560px){.brand-list{grid-template-columns:1fr}.brands{padding:44px 0}}
+.brand-logo{height:56px}
+.brand-logo[data-brand="gehwol"] img{max-height:54px;max-width:none}
+.brand-logo[data-brand="akzentz"] img{max-height:42px;max-width:none}
