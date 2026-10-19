@@ -898,3 +898,16 @@ body{letter-spacing:0}
 .portrait img.focus-bottom{object-position:50% 100%}
 .olga-round{width:168px;height:168px}@media (max-width:600px){.olga-round{width:138px;height:138px}}
 .olga-head p.olga-link{margin-top:10px;font-size:1rem;color:inherit}
+
+/* Promo bar (desktop/tablet only) */
+.promo-bar{position:relative;z-index:60;background:var(--plum-deep);color:#f4e4ec;font-size:.95rem}
+.promo-inner{display:flex;align-items:center;justify-content:center;min-height:44px;padding-right:44px;position:relative}
+.promo-inner p{display:flex;align-items:center;gap:14px;margin:0;line-height:1.4;flex-wrap:wrap;justify-content:center}
+.promo-tag{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;background:var(--gold);color:#3b0f28;font-weight:700;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase}
+.promo-link{display:inline-flex;align-items:center;gap:6px;color:#fff;font-weight:600;border-bottom:1px solid #ffffff66;padding-bottom:1px}
+.promo-link:hover{border-bottom-color:#fff}
+.promo-link .icon{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8}
+.promo-close{position:absolute;right:0;top:50%;transform:translateY(-50%);width:34px;height:34px;display:grid;place-items:center;border:0;background:transparent;color:#f4e4ec;cursor:pointer;border-radius:50%}
+.promo-close:hover{background:#ffffff1a;color:#fff}
+.promo-close .icon{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+@media (max-width:699px){.promo-bar{display:none}}

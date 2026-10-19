@@ -48,6 +48,20 @@
     });
   });
 
+  /* Promo bar dismiss */
+  var promo = document.getElementById("promo-bar");
+  if (promo) {
+    var pc = promo.querySelector(".promo-close");
+    if (pc) pc.addEventListener("click", function () {
+      promo.remove();
+      try { localStorage.setItem("promo-efile-closed", "1"); } catch (e) {}
+    });
+    var pl = promo.querySelector("[data-promo]");
+    if (pl) pl.addEventListener("click", function () {
+      if (typeof window.gtag === "function") window.gtag("event", "promo_click", { promo: pl.getAttribute("data-promo") });
+    });
+  }
+
   /* Reveal on scroll */
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && reveals.length) {
