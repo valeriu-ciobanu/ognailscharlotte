@@ -798,3 +798,103 @@ body{letter-spacing:0}
 .brand-logo{height:56px}
 .brand-logo[data-brand="gehwol"] img{max-height:54px;max-width:none}
 .brand-logo[data-brand="akzentz"] img{max-height:42px;max-width:none}
+
+/* E-file guide */
+.compare-wrap{overflow-x:auto;border:1px solid var(--line,#e8dde3);border-radius:var(--radius);background:#fff}
+.compare{width:100%;border-collapse:collapse;min-width:620px;font-size:1rem}
+.compare th,.compare td{padding:18px 22px;text-align:left;vertical-align:top;border-bottom:1px solid #efe5ea;line-height:1.6}
+.compare tbody tr:last-child th,.compare tbody tr:last-child td{border-bottom:0}
+.compare thead th{font-family:var(--serif);font-weight:500;font-size:1.3rem;background:#faf4f7}
+.compare thead th:last-child{color:var(--plum)}
+.compare tbody th{font-weight:600;width:22%;color:var(--ink,#2b2026)}
+.compare td{color:var(--muted)}
+.compare td:last-child{color:var(--ink,#2b2026);background:#fbf6f9}
+.ef-benefits{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 40px;padding:0}
+.ef-benefits li{padding-top:22px;border-top:2px solid var(--plum)}
+.ef-benefits h3{font-size:1.5rem;margin-bottom:10px}
+.ef-benefits p{color:var(--muted);line-height:1.75}
+@media (max-width:900px){.ef-benefits{grid-template-columns:1fr 1fr;gap:32px}}
+@media (max-width:600px){.ef-benefits{grid-template-columns:1fr}.compare th,.compare td{padding:14px 16px}}
+@media (max-width:700px){
+  .compare-wrap{overflow:visible;border:0;background:none;border-radius:0}
+  .compare{min-width:0}
+  .compare thead{display:none}
+  .compare,.compare tbody,.compare tr,.compare th,.compare td{display:block;width:auto}
+  .compare tr{background:#fff;border:1px solid #efe5ea;border-radius:var(--radius);margin-bottom:12px;overflow:hidden}
+  .compare tbody th{width:auto;padding:14px 16px 6px;border:0;font-family:var(--serif);font-weight:500;font-size:1.2rem}
+  .compare td{border:0;padding:6px 16px 12px}
+  .compare td::before{content:attr(data-label);display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--muted);margin-bottom:2px}
+  .compare td:last-child{padding-top:12px;padding-bottom:14px}
+  .compare td:last-child::before{color:var(--plum)}
+}
+
+/* Gift page */
+.gift-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:stretch}
+.gift-card{display:flex;flex-direction:column;background:#fff;border:1px solid #efe5ea;border-radius:var(--radius);overflow:hidden;box-shadow:0 18px 40px -30px rgba(80,20,55,.35)}
+.gift-card.is-featured{border:2px solid var(--plum);box-shadow:0 26px 60px -30px rgba(110,20,75,.5)}
+.gift-media{aspect-ratio:4/3;overflow:hidden;background:#f6eef2}
+.gift-media img{width:100%;height:100%;object-fit:cover;display:block}
+.gift-body{display:flex;flex-direction:column;gap:6px;padding:26px 26px 28px;flex:1}
+.gift-body .who-pill{align-self:flex-start;font-size:.85rem;padding:5px 12px;margin-bottom:6px}
+.gift-body h3{font-size:1.75rem}
+.gift-sub{color:var(--muted)}
+.gift-price{font-family:var(--serif);font-size:2.6rem;line-height:1;color:var(--plum);margin:10px 0 14px}
+.gift-body ul{list-style:none;padding:0;display:grid;gap:10px;margin-bottom:16px}
+.gift-body li{display:flex;gap:10px;align-items:flex-start;line-height:1.5}
+.gift-body li .icon{width:20px;height:20px;flex:none;margin-top:2px;stroke:var(--plum);fill:none;stroke-width:1.6}
+.gift-line{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--plum-2);margin-bottom:20px}
+.gift-body .button{margin-top:auto;justify-content:center}
+.gift-note{margin-top:30px;text-align:center;color:var(--muted)}
+.gift-occasions{margin-top:56px;padding-top:36px;border-top:1px solid #efe5ea;display:flex;gap:18px 28px;align-items:center;flex-wrap:wrap}
+.gift-occasions h3{font-size:1.5rem}
+.gift-occasions ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.gift-occasions li{padding:8px 16px;border-radius:999px;background:#f7eaf1;color:var(--plum);font-weight:600;font-size:.95rem}
+.gift-him{display:flex;justify-content:space-between;align-items:center;gap:32px;padding:40px 44px;border-radius:var(--radius);background:linear-gradient(135deg,#f7eaf1,#fff 80%);border:1px solid #ead6e1}
+.gift-him h2{font-size:clamp(28px,2.6vw,38px);margin:14px 0 10px}
+.gift-him p{color:var(--muted);max-width:620px;line-height:1.7}
+.gift-him .button{flex:none}
+.gift-strip{padding:0 0 8px}
+.gift-strip-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:20px 28px;border-radius:var(--radius);background:#f7e58a33;border:1px solid #efd96a;}
+.gift-strip-inner p{display:flex;align-items:center;gap:12px;margin:0;line-height:1.5}
+.gift-strip-icon .icon{width:26px;height:26px;stroke:var(--plum);fill:none;stroke-width:1.6;flex:none}
+.button .icon[class]{vertical-align:middle}
+@media (max-width:900px){.gift-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}.gift-him{flex-direction:column;align-items:flex-start;padding:30px 26px}}
+@media (max-width:600px){.gift-strip-inner{padding:18px 20px}.gift-strip-inner p{align-items:flex-start}}
+.gift-card{position:relative}.gift-body .who-pill{position:absolute;top:16px;left:16px;margin:0;box-shadow:0 6px 16px -8px rgba(0,0,0,.35)}
+.gift-strip{padding:0 0 72px}@media (max-width:600px){.gift-strip{padding-bottom:48px}}
+/* E-file page: Olga block without box */
+.checks.checks-olga{border:0;background:none;box-shadow:none;padding:6px 0 0}
+.olga-head{display:flex;align-items:center;gap:22px;margin-bottom:10px}
+.olga-round{width:112px;height:112px;border-radius:50%;object-fit:cover;flex:none;border:4px solid var(--gold);box-shadow:0 0 0 5px #fff,0 0 0 6px #f0e3a0,0 14px 30px -14px rgba(80,20,55,.45)}
+.olga-head h3{margin:0}
+.olga-head p{color:var(--soft);margin-top:4px;font-size:.98rem}
+@media (max-width:600px){.checks.checks-olga{padding:0}.olga-round{width:92px;height:92px}}
+/* E-file column outline (accent) */
+.compare-wrap{overflow:visible}
+.compare thead th:last-child,.compare tbody td:last-child{border-left:3px solid var(--gold);border-right:3px solid var(--gold)}
+.compare thead th:last-child{border-top:3px solid var(--gold);border-radius:12px 12px 0 0;background:#fffbe0;font-weight:600}
+.compare tbody tr:last-child td:last-child{border-bottom:3px solid var(--gold)}
+.compare{border-collapse:separate;border-spacing:0}
+.compare tbody tr:last-child td:last-child{border-radius:0 0 12px 12px}
+.compare-wrap{position:relative;padding-top:0}
+@media (max-width:700px){
+  .compare tbody td:last-child{border:0;outline:2px solid var(--gold);outline-offset:-2px;border-radius:0 0 var(--radius) var(--radius);background:#fffbe0}
+  .compare tbody tr:last-child td:last-child{border:0}
+}
+/* Gift hero */
+.gift-hero .hero-media img{object-position:100% 45%;transform-origin:85% 50%}
+.gift-hero .hero-inner{min-height:min(760px,92svh)}
+.gift-hero .hero-copy{max-width:640px}
+.site-nav a.nav-gift{display:inline-flex;align-items:center;gap:7px}
+.site-nav a.nav-gift .icon{width:19px;height:19px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;margin-top:-2px}
+@media (max-width:900px){.site-nav a.nav-gift{display:flex}.site-nav a.nav-gift .icon{width:22px;height:22px}}
+/* Gift page: Why O.G. Nails without box */
+.why-og .why-logo{width:150px;height:auto;margin-bottom:6px}
+.why-og h3{margin-bottom:4px}
+.why-brands{display:flex;align-items:center;gap:36px;margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+.why-brands img{width:auto;height:auto;max-height:46px;max-width:140px}
+.why-brands img[alt="Akzentz"]{max-height:34px}
+.cta-band p{max-width:none}@media (min-width:760px){.cta-band p{white-space:nowrap}}
+.portrait img.focus-bottom{object-position:50% 100%}
+.olga-round{width:168px;height:168px}@media (max-width:600px){.olga-round{width:138px;height:138px}}
+.olga-head p.olga-link{margin-top:10px;font-size:1rem;color:inherit}

@@ -40,6 +40,14 @@
     });
   });
 
+  document.querySelectorAll("[data-gift]").forEach(function (el) {
+    el.addEventListener("click", function () {
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "gift_card_click", { location: el.getAttribute("data-gift") || "unknown" });
+      }
+    });
+  });
+
   /* Reveal on scroll */
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && reveals.length) {
