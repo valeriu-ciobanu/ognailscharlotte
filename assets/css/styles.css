@@ -911,3 +911,24 @@ body{letter-spacing:0}
 .promo-close:hover{background:#ffffff1a;color:#fff}
 .promo-close .icon{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
 @media (max-width:699px){.promo-bar{display:none}}
+/* Mobile: small Book Now in header, no bottom bar */
+@media (max-width:900px){
+  .mobile-book{display:none!important}
+  body{padding-bottom:0}
+  .nav-wrap{gap:10px}
+  .site-header .header-book{display:inline-flex;order:2;margin-left:auto;min-height:40px;padding:8px 14px;font-size:.92rem;gap:6px;border-width:2px}
+  .site-header .header-book .icon{width:16px;height:16px}
+  .nav-toggle{order:3;margin-left:0;height:40px;width:40px}
+}
+@media (max-width:380px){
+  .site-header .header-book .icon{display:none}
+  .brand .logo{width:160px}
+}
+.site-header .header-book{white-space:nowrap}
+@media (max-width:600px){
+  .brand .logo{width:168px}
+  .site-header .header-book{padding:7px 14px;font-size:.88rem;min-height:38px}
+  .site-header .header-book .icon{display:none}
+  .nav-toggle{width:38px;height:38px}
+}
+@media (max-width:370px){.brand .logo{width:146px}.site-header .header-book{padding:7px 11px}}

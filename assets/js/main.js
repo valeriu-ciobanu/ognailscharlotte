@@ -35,7 +35,7 @@
   document.querySelectorAll("[data-book]").forEach(function (el) {
     el.addEventListener("click", function () {
       if (typeof window.gtag === "function") {
-        window.gtag("event", "book_now_click", { location: el.getAttribute("data-book") || "unknown" });
+        window.gtag("event", "book_now_click", { location: el.getAttribute("data-book") || "unknown", transport_type: "beacon" });
       }
     });
   });
@@ -43,7 +43,7 @@
   document.querySelectorAll("[data-gift]").forEach(function (el) {
     el.addEventListener("click", function () {
       if (typeof window.gtag === "function") {
-        window.gtag("event", "gift_card_click", { location: el.getAttribute("data-gift") || "unknown" });
+        window.gtag("event", "gift_card_click", { location: el.getAttribute("data-gift") || "unknown", transport_type: "beacon" });
       }
     });
   });
