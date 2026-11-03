@@ -1352,3 +1352,28 @@ body{background-color:#f8f4ee;background-image:url("data:image/svg+xml,%3Csvg xm
 /* white nav */
 .site-header,.has-overlay-header .site-header,.has-overlay-header.scrolled .site-header,.has-overlay-header:not(.scrolled) .site-header{background:#fff}
 @media (max-width:900px){.site-nav{background:#fff}}
+/* home hero: left-aligned copy */
+.hero-full{text-align:left}
+.hero-full .hero-copy{margin:0;max-width:900px}
+.hero-full .eyebrow{justify-content:flex-start}
+.hero-full .eyebrow::after{display:none}
+.hero-full .hero-actions{justify-content:flex-start}
+.hero-full .hero-copy{max-width:1100px}
+/* new O.G. Nails logo */
+.brand .logo,.site-header .logo{width:auto!important;height:62px;display:block}
+.has-overlay-header:not(.scrolled) .site-header .logo:not(.logo-light){display:block}
+.nav-wrap{min-height:84px}
+@media (max-width:900px){.brand .logo,.site-header .logo{height:50px}.nav-wrap{min-height:68px}}
+@media (max-width:380px){.brand .logo,.site-header .logo{height:44px}}
+.site-footer .logo,.footer-brand img{width:auto;height:72px}
+@media (min-width:901px){.brand .logo,.site-header .logo{height:74px}.nav-wrap{min-height:96px}}.site-footer .logo{height:84px}
+@media (max-width:600px){html{font-size:17.5px}body{font-size:19px;line-height:1.65}}
+.price-intro .num{font-size:0;gap:0;letter-spacing:0}
+/* About: credentials in two columns */
+.cred-section .about-split{grid-template-columns:1fr;gap:44px}
+.cred-section .timeline{grid-template-columns:1fr 1fr;column-gap:64px;row-gap:0;border-left:0;margin-left:8px}
+.cred-section .timeline li{border-left:1px solid var(--line-strong);padding:0 0 40px 34px}
+.cred-section .timeline li:last-child{padding-bottom:40px}
+.cred-section .timeline h3{font-size:1.45rem}
+@media (max-width:760px){.cred-section .timeline{grid-template-columns:1fr}.cred-section .timeline li:last-child{padding-bottom:0}}
+.choose-single{display:block}.choose-single .explainer-card{max-width:820px}
