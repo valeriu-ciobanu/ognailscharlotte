@@ -6,18 +6,18 @@
 @font-face{font-family:"Inter";font-style:normal;font-weight:100 900;font-display:swap;src:url("../fonts/inter-latin-wght-normal.woff2") format("woff2")}
 
 :root{
-  --bg:#fffdfc;
+  --bg:#f8f4ee;
   --ink:#1f161c;
   --muted:#333;
   --soft:#6e6269;
-  --line:#ede5e8;
-  --line-strong:#e2d6dc;
-  --surface:#fbf7f6;
+  --line:#e8decf;
+  --line-strong:#dccfbc;
+  --surface:#f1e9de;
   --plum:#771d51;
   --plum-2:#932f6d;
   --plum-deep:#5f1641;
-  --plum-soft:#f7ebf1;
-  --plum-tint:#fcf6f9;
+  --plum-soft:#f1e9de;
+  --plum-tint:#f1e9de;
   --gold:#f4da01;
   --radius:14px;
   --radius-sm:8px;
@@ -51,7 +51,7 @@ p{text-wrap:pretty}
 .button:hover{background:var(--plum-deep);border-color:var(--plum-deep);transform:translateY(-2px)}
 .button-small{font-size:1rem;padding:10px 18px;min-height:44px}
 .button-secondary{background:#fff;color:var(--ink);border-color:var(--line-strong);box-shadow:0 2px 3px #2a0f1f05}
-.button-secondary:hover{background:var(--plum-tint);border-color:#d7b6c8;color:var(--plum)}
+.button-secondary:hover{background:var(--plum-tint);border-color:#cdbda6;color:var(--plum)}
 .button .icon{width:18px;height:18px}
 .text-link{display:inline-flex;align-items:center;gap:8px;font-weight:560;font-size:1.1rem;color:var(--plum);border-bottom:1px solid #932f6d40;padding-bottom:2px;transition:border-color .2s,gap .2s}
 .text-link:hover{border-color:var(--plum);gap:12px}
@@ -63,7 +63,7 @@ p{text-wrap:pretty}
 .kicker{font-size:.75rem;font-weight:620;letter-spacing:.12em;text-transform:uppercase;color:var(--plum-2)}
 
 /* ---------- Header ---------- */
-.site-header{position:sticky;top:0;z-index:50;background:#fffdfcf0;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.site-header{position:sticky;top:0;z-index:50;background:#f8f4eef0;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav-wrap{min-height:var(--header-h);display:flex;align-items:center;gap:32px}
 .brand{display:inline-flex;align-items:center;flex-shrink:0;color:var(--ink)}
 .brand .logo{width:220px;height:auto}
@@ -145,7 +145,7 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 .has-overlay-header:not(.scrolled) .nav-toggle{border-color:#ffffff59}
 .has-overlay-header:not(.scrolled) .nav-toggle .bar,.has-overlay-header:not(.scrolled) .nav-toggle .bar::before,.has-overlay-header:not(.scrolled) .nav-toggle .bar::after{background:#fff}
 .nav-open .has-overlay-header:not(.scrolled) .nav-toggle .bar{background:transparent}
-.has-overlay-header.scrolled .site-header{background:#fffdfcf0;border-bottom-color:var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.has-overlay-header.scrolled .site-header{background:#f8f4eef0;border-bottom-color:var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 
 /* ---------- Page hero (inner pages) ---------- */
 .page-hero{padding:76px 0 56px;text-align:center}
@@ -170,7 +170,7 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 .process{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:16px;margin-top:56px}
 .process figure{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:#eee}
 .process img{width:100%;height:100%;object-fit:cover}
-.process .process-note{border-radius:var(--radius);border:1px solid #ecd9e3;background:linear-gradient(150deg,#f7eaf1 0%,#fff 80%);padding:32px;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:auto}
+.process .process-note{border-radius:var(--radius);border:1px solid #e8decf;background:linear-gradient(150deg,#f1e9de 0%,#fff 80%);padding:32px;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:auto}
 .process-note h3{font-size:1.75rem;margin:14px 0 12px}
 .process-note p{color:var(--muted);line-height:1.75}
 
@@ -192,7 +192,7 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 
 /* ---------- Photo grid ---------- */
 .photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.photo-grid .tile{position:relative;border-radius:12px;overflow:hidden;background:#f1e9ec;aspect-ratio:4/5;border:0;padding:0;display:block;width:100%}
+.photo-grid .tile{position:relative;border-radius:12px;overflow:hidden;background:#e8decf;aspect-ratio:4/5;border:0;padding:0;display:block;width:100%}
 .photo-grid .tile img{width:100%;height:100%;object-fit:cover;transition:transform .6s,filter .3s}
 .photo-grid .tile:hover img{transform:scale(1.035)}
 .photo-grid .tile::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px #00000010;pointer-events:none}
@@ -201,7 +201,7 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 
 /* ---------- About snippet ---------- */
 .about-split{display:grid;grid-template-columns:1fr 1.05fr;gap:80px;align-items:center}
-.portrait{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/4.4;background:#f3e6e4;box-shadow:var(--shadow)}
+.portrait{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/4.4;background:#e8decf;box-shadow:var(--shadow)}
 .portrait img{width:100%;height:100%;object-fit:cover;object-position:52% 30%}
 .portrait-badge{position:absolute;left:18px;bottom:18px;background:#fffffff2;backdrop-filter:blur(8px);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow);font-size:.8125rem;line-height:1.35;color:var(--muted)}
 .portrait-badge strong{display:block;color:var(--ink);font-weight:600;font-size:.9rem}
@@ -217,7 +217,7 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 
 /* ---------- Visit / location ---------- */
 .visit{display:grid;grid-template-columns:1fr 1.1fr;gap:24px;align-items:stretch}
-.visit-card{border:1px solid #e8d3df;border-radius:var(--radius);background:linear-gradient(145deg,#f7eaf1 0,#fff 78%);padding:40px;display:flex;flex-direction:column}
+.visit-card{border:1px solid #dccfbc;border-radius:var(--radius);background:linear-gradient(145deg,#f1e9de 0,#fff 78%);padding:40px;display:flex;flex-direction:column}
 .visit-card h2{font-size:clamp(32px,3.2vw,44px);margin:18px 0 16px}
 .visit-card>p{color:var(--muted);line-height:1.75;margin-bottom:28px}
 .info-list{display:grid;gap:18px;margin-bottom:32px}
@@ -239,7 +239,7 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 .faq-list summary .plus{width:30px;height:30px;border-radius:50%;border:1px solid var(--line-strong);position:relative;flex-shrink:0;transition:background .2s,border-color .2s}
 .faq-list summary .plus::before,.faq-list summary .plus::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:var(--plum);transform:translate(-50%,-50%);transition:transform .25s}
 .faq-list summary .plus::after{transform:translate(-50%,-50%) rotate(90deg)}
-.faq-list details[open] summary .plus{background:var(--plum-soft);border-color:#e3c5d5}
+.faq-list details[open] summary .plus{background:var(--plum-soft);border-color:#dccfbc}
 .faq-list details[open] summary .plus::after{transform:translate(-50%,-50%) rotate(0)}
 .faq-list summary:hover{color:var(--plum)}
 .faq-list .answer{padding:0 54px 26px 0;color:var(--muted);line-height:1.8}
@@ -259,7 +259,7 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 
 /* ---------- Services page ---------- */
 .explainer{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
-.explainer-card{border:1px solid #ead6e1;border-radius:var(--radius);background:linear-gradient(145deg,#f7eaf1 0,#fff 75%);padding:36px}
+.explainer-card{border:1px solid #e8decf;border-radius:var(--radius);background:linear-gradient(145deg,#f1e9de 0,#fff 75%);padding:36px}
 .explainer-card h2{font-size:clamp(28px,2.6vw,36px);margin:16px 0 14px}
 .explainer-card p{color:var(--muted);line-height:1.8}
 .explainer-card p+p{margin-top:12px}
@@ -269,12 +269,12 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 .checks .icon{color:var(--plum-2);margin-top:2px}
 .checks li strong{color:var(--ink);font-weight:600}
 
-.jump-nav{position:sticky;top:var(--header-h);z-index:30;background:#fffdfcf0;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);border-top:1px solid var(--line)}
+.jump-nav{position:sticky;top:var(--header-h);z-index:30;background:#f8f4eef0;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);border-top:1px solid var(--line)}
 .jump-nav .container{display:flex;align-items:center;gap:8px;min-height:64px;overflow-x:auto;scrollbar-width:none}
 .jump-nav .container::-webkit-scrollbar{display:none}
 .jump-nav a{white-space:nowrap;font-size:.875rem;font-weight:540;color:#463b42;padding:9px 16px;border-radius:40px;border:1px solid transparent;transition:background .2s,color .2s,border-color .2s}
 .jump-nav a:hover{color:var(--plum)}
-.jump-nav a.active{background:var(--plum-soft);color:var(--plum);border-color:#ecd2df}
+.jump-nav a.active{background:var(--plum-soft);color:var(--plum);border-color:#dccfbc}
 .jump-nav .button{margin-left:auto}
 
 .price-section{padding:80px 0;border-bottom:1px solid var(--line);scroll-margin-top:calc(var(--header-h) + 16px)}
@@ -299,7 +299,7 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 /* ---------- Gallery page ---------- */
 .filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:36px}
 .filter{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;min-height:42px;border-radius:40px;border:1px solid var(--line-strong);background:#fff;font-size:.875rem;font-weight:540;color:#463b42;transition:all .2s}
-.filter:hover{border-color:#d7b6c8;color:var(--plum)}
+.filter:hover{border-color:#cdbda6;color:var(--plum)}
 .filter[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
 .filter .count{font-size:.75rem;opacity:.65;font-variant-numeric:tabular-nums}
 .filter[hidden]{display:none}
@@ -310,10 +310,10 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 .lightbox{border:0;padding:0;margin:0;width:100vw;height:100vh;max-width:none;max-height:none;background:#170f14f2;color:#fff}
 .lightbox::backdrop{background:#170f14e6}
 .lightbox[open]{display:grid;grid-template-rows:auto 1fr auto}
-.lb-top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;font-size:.875rem;color:#e9d9e1}
+.lb-top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;font-size:.875rem;color:#e8decf}
 .lb-stage{position:relative;display:grid;place-items:center;min-height:0;padding:0 72px}
 .lb-stage img{max-width:100%;max-height:calc(100vh - 150px);width:auto;height:auto;border-radius:10px;object-fit:contain;box-shadow:0 30px 80px #0008}
-.lb-caption{padding:16px 20px 24px;text-align:center;color:#e9d9e1;font-size:.9375rem}
+.lb-caption{padding:16px 20px 24px;text-align:center;color:#e8decf;font-size:.9375rem}
 .lb-btn{background:#ffffff14;border:1px solid #ffffff2e;color:#fff;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;transition:background .2s}
 .lb-btn:hover{background:#ffffff2e}
 .lb-prev,.lb-next{position:absolute;top:50%;transform:translateY(-50%)}
@@ -383,12 +383,12 @@ h2{font-size:clamp(34px,3.6vw,50px)}
   :root{--header-h:68px}
   .nav-toggle{display:inline-flex}
   .site-header .header-book{display:none}
-  .site-nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;margin:0;background:#fffdfc;border-bottom:1px solid var(--line);padding:8px 32px 20px;box-shadow:0 20px 30px #2a0f1f0d;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s}
+  .site-nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;margin:0;background:#f8f4ee;border-bottom:1px solid var(--line);padding:8px 32px 20px;box-shadow:0 20px 30px #2a0f1f0d;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s}
   .nav-open .site-nav{opacity:1;visibility:visible;transform:none}
   .site-nav a{font-family:var(--serif);font-size:1.5rem;padding:12px 0;border-bottom:1px solid var(--line)}
   .site-nav a::after{display:none}
   .brand .logo{width:184px}
-  .mobile-book{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#fffdfcf2;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+  .mobile-book{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#f8f4eef2;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line)}
   .mobile-book .button{flex:1}
   .mobile-book .button-secondary{flex:0 0 52px;padding:0}
   body{padding-bottom:76px}
@@ -447,7 +447,7 @@ h2{font-size:clamp(34px,3.6vw,50px)}
 .jump-nav a.button:hover{background:var(--plum-deep);color:#fff}
 
 @media (max-width:900px){
-  .nav-open .has-overlay-header:not(.scrolled) .site-header{background:#fffdfc}
+  .nav-open .has-overlay-header:not(.scrolled) .site-header{background:#f8f4ee}
   .nav-open .has-overlay-header:not(.scrolled) .site-header .logo:not(.logo-light){display:block}
   .nav-open .has-overlay-header:not(.scrolled) .site-header .logo-light{display:none}
   .nav-open .has-overlay-header:not(.scrolled) .nav-toggle .bar::before,.nav-open .has-overlay-header:not(.scrolled) .nav-toggle .bar::after{background:var(--ink)}
@@ -575,7 +575,7 @@ body{letter-spacing:0}
 .timeline .courses{font-size:.9375rem;line-height:1.7;color:var(--muted)}
 
 /* Services: boxed "Why clients choose it" */
-.checks{border:1px solid #ead6e1;border-radius:16px;background:linear-gradient(145deg,#f7eaf1 0%,#fff 78%);padding:36px 36px 34px;box-shadow:0 2px 4px #2a0f1f05,0 14px 40px #2a0f1f0a}
+.checks{border:1px solid #e8decf;border-radius:16px;background:linear-gradient(145deg,#f1e9de 0%,#fff 78%);padding:36px 36px 34px;box-shadow:0 2px 4px #2a0f1f05,0 14px 40px #2a0f1f0a}
 @media (max-width:600px){.checks{padding:26px 22px}}
 
 /* Mobile menu: accent color for hover/current (was white over hero) */
@@ -607,7 +607,7 @@ body{letter-spacing:0}
 .footcare-price strong{font-family:var(--serif);font-weight:400;font-size:1.75rem;color:#fff;margin:0 2px}
 
 /* ---------- Foot care page ---------- */
-.disclaimer{display:flex;gap:10px;align-items:flex-start;margin-top:22px;padding-top:18px;border-top:1px solid #ead6e1;font-size:.875rem;line-height:1.6;color:var(--muted)}
+.disclaimer{display:flex;gap:10px;align-items:flex-start;margin-top:22px;padding-top:18px;border-top:1px solid #e8decf;font-size:.875rem;line-height:1.6;color:var(--muted)}
 .disclaimer .icon{width:17px;height:17px;margin-top:2px;color:var(--plum-2)}
 .fc-figure{border-radius:16px;overflow:hidden;aspect-ratio:4/4.2}
 .fc-figure img{width:100%;height:100%;object-fit:cover}
@@ -697,7 +697,7 @@ body{letter-spacing:0}
 .wire-intro h2{color:#fff;margin:18px 0 18px}
 .wire-intro h2 em{color:#f7e58a}
 .wire-intro>p{color:#f2dbe7;font-size:1.0625rem;line-height:1.75}
-.wire-intro .wire-note{font-size:.9375rem;color:#e3c3d4;margin:16px 0 28px;padding-left:14px;border-left:2px solid #f7e58a}
+.wire-intro .wire-note{font-size:.9375rem;color:#dccfbc;margin:16px 0 28px;padding-left:14px;border-left:2px solid #f7e58a}
 .wire-card{margin:0}
 .wire-card .ba-img{aspect-ratio:600/1064;border-radius:16px;box-shadow:0 30px 60px -24px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08)}
 .wire-card figcaption{margin-top:18px}
@@ -708,14 +708,14 @@ body{letter-spacing:0}
 .ba-next{margin-top:48px;padding-top:48px;border-top:1px solid var(--line-strong)}
 /* Before / after tags as pills */
 .ba-item figcaption{align-items:center}
-.ba-tag{display:inline-block;border-radius:999px;padding:5px 12px;font-size:.72rem;letter-spacing:.12em;background:#f6e7ef;color:var(--plum);line-height:1.2}
+.ba-tag{display:inline-block;border-radius:999px;padding:5px 12px;font-size:.72rem;letter-spacing:.12em;background:#f1e9de;color:var(--plum);line-height:1.2}
 .ba-tag.ba-after{background:var(--plum);color:#fff}
 .wire-intro .wire-note{margin-bottom:0}
 /* Four-step before/after (corn removal) */
 .ba-quad{grid-template-columns:repeat(4,minmax(0,1fr))}
 .ba-quad .ba-img{aspect-ratio:3/4}
 .ba-quad figcaption{flex-direction:column;align-items:flex-start;gap:8px}
-.ba-tag.ba-step{background:#fff;color:var(--plum);box-shadow:inset 0 0 0 1px #e7c9d8}
+.ba-tag.ba-step{background:#fff;color:var(--plum);box-shadow:inset 0 0 0 1px #dccfbc}
 
 @media (max-width:900px){.ba-quad{grid-template-columns:repeat(2,minmax(0,1fr))}}
 /* Before/after pairs: two pairs per row */
@@ -741,7 +741,7 @@ body{letter-spacing:0}
 /* Gallery filters: larger pills */
 .filters{gap:10px}
 .filter{padding:11px 20px;min-height:46px;border-radius:999px;border:1px solid var(--line-strong);background:#fff;font-size:1rem;font-weight:560;color:#463b42}
-.filter:hover{border-color:#d7b6c8;background:#fbf3f7;color:var(--plum)}
+.filter:hover{border-color:#cdbda6;background:#f1e9de;color:var(--plum)}
 .filter[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
 .filter .count{font-size:.8125rem}
 @media (max-width:640px){.filter{font-size:.9375rem;padding:9px 16px;min-height:42px}.filters{gap:8px}}
@@ -787,7 +787,7 @@ body{letter-spacing:0}
 .brands-copy h2{margin:16px 0 12px;font-size:clamp(28px,2.6vw,38px)}
 .brands-copy p{color:var(--muted);line-height:1.7;max-width:460px}
 .brand-list{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.brand-tile{border:1px solid var(--line-strong);border-radius:16px;padding:26px 24px;background:var(--bg,#fbf7f5)}
+.brand-tile{border:1px solid var(--line-strong);border-radius:16px;padding:26px 24px;background:var(--bg,#f1e9de)}
 .brand-logo{display:flex;align-items:center;height:44px;margin-bottom:14px}
 .brand-logo img{max-height:44px;max-width:170px;width:auto;height:auto;object-fit:contain}
 .brand-logo img + .brand-word{display:none}
@@ -800,15 +800,15 @@ body{letter-spacing:0}
 .brand-logo[data-brand="akzentz"] img{max-height:42px;max-width:none}
 
 /* E-file guide */
-.compare-wrap{overflow-x:auto;border:1px solid var(--line,#e8dde3);border-radius:var(--radius);background:#fff}
+.compare-wrap{overflow-x:auto;border:1px solid var(--line,#e8decf);border-radius:var(--radius);background:#fff}
 .compare{width:100%;border-collapse:collapse;min-width:620px;font-size:1rem}
-.compare th,.compare td{padding:18px 22px;text-align:left;vertical-align:top;border-bottom:1px solid #efe5ea;line-height:1.6}
+.compare th,.compare td{padding:18px 22px;text-align:left;vertical-align:top;border-bottom:1px solid #e8decf;line-height:1.6}
 .compare tbody tr:last-child th,.compare tbody tr:last-child td{border-bottom:0}
-.compare thead th{font-family:var(--serif);font-weight:500;font-size:1.3rem;background:#faf4f7}
+.compare thead th{font-family:var(--serif);font-weight:500;font-size:1.3rem;background:#f1e9de}
 .compare thead th:last-child{color:var(--plum)}
 .compare tbody th{font-weight:600;width:22%;color:var(--ink,#2b2026)}
 .compare td{color:var(--muted)}
-.compare td:last-child{color:var(--ink,#2b2026);background:#fbf6f9}
+.compare td:last-child{color:var(--ink,#2b2026);background:#f1e9de}
 .ef-benefits{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 40px;padding:0}
 .ef-benefits li{padding-top:22px;border-top:2px solid var(--plum)}
 .ef-benefits h3{font-size:1.5rem;margin-bottom:10px}
@@ -820,7 +820,7 @@ body{letter-spacing:0}
   .compare{min-width:0}
   .compare thead{display:none}
   .compare,.compare tbody,.compare tr,.compare th,.compare td{display:block;width:auto}
-  .compare tr{background:#fff;border:1px solid #efe5ea;border-radius:var(--radius);margin-bottom:12px;overflow:hidden}
+  .compare tr{background:#fff;border:1px solid #e8decf;border-radius:var(--radius);margin-bottom:12px;overflow:hidden}
   .compare tbody th{width:auto;padding:14px 16px 6px;border:0;font-family:var(--serif);font-weight:500;font-size:1.2rem}
   .compare td{border:0;padding:6px 16px 12px}
   .compare td::before{content:attr(data-label);display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--muted);margin-bottom:2px}
@@ -830,9 +830,9 @@ body{letter-spacing:0}
 
 /* Gift page */
 .gift-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:stretch}
-.gift-card{display:flex;flex-direction:column;background:#fff;border:1px solid #efe5ea;border-radius:var(--radius);overflow:hidden;box-shadow:0 18px 40px -30px rgba(80,20,55,.35)}
+.gift-card{display:flex;flex-direction:column;background:#fff;border:1px solid #e8decf;border-radius:var(--radius);overflow:hidden;box-shadow:0 18px 40px -30px rgba(80,20,55,.35)}
 .gift-card.is-featured{border:2px solid var(--plum);box-shadow:0 26px 60px -30px rgba(110,20,75,.5)}
-.gift-media{aspect-ratio:4/3;overflow:hidden;background:#f6eef2}
+.gift-media{aspect-ratio:4/3;overflow:hidden;background:#f1e9de}
 .gift-media img{width:100%;height:100%;object-fit:cover;display:block}
 .gift-body{display:flex;flex-direction:column;gap:6px;padding:26px 26px 28px;flex:1}
 .gift-body .who-pill{align-self:flex-start;font-size:.85rem;padding:5px 12px;margin-bottom:6px}
@@ -845,11 +845,11 @@ body{letter-spacing:0}
 .gift-line{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--plum-2);margin-bottom:20px}
 .gift-body .button{margin-top:auto;justify-content:center}
 .gift-note{margin-top:30px;text-align:center;color:var(--muted)}
-.gift-occasions{margin-top:56px;padding-top:36px;border-top:1px solid #efe5ea;display:flex;gap:18px 28px;align-items:center;flex-wrap:wrap}
+.gift-occasions{margin-top:56px;padding-top:36px;border-top:1px solid #e8decf;display:flex;gap:18px 28px;align-items:center;flex-wrap:wrap}
 .gift-occasions h3{font-size:1.5rem}
 .gift-occasions ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}
-.gift-occasions li{padding:8px 16px;border-radius:999px;background:#f7eaf1;color:var(--plum);font-weight:600;font-size:.95rem}
-.gift-him{display:flex;justify-content:space-between;align-items:center;gap:32px;padding:40px 44px;border-radius:var(--radius);background:linear-gradient(135deg,#f7eaf1,#fff 80%);border:1px solid #ead6e1}
+.gift-occasions li{padding:8px 16px;border-radius:999px;background:#f1e9de;color:var(--plum);font-weight:600;font-size:.95rem}
+.gift-him{display:flex;justify-content:space-between;align-items:center;gap:32px;padding:40px 44px;border-radius:var(--radius);background:linear-gradient(135deg,#f1e9de,#fff 80%);border:1px solid #e8decf}
 .gift-him h2{font-size:clamp(28px,2.6vw,38px);margin:14px 0 10px}
 .gift-him p{color:var(--muted);max-width:620px;line-height:1.7}
 .gift-him .button{flex:none}
@@ -932,3 +932,423 @@ body{letter-spacing:0}
   .nav-toggle{width:38px;height:38px}
 }
 @media (max-width:370px){.brand .logo{width:146px}.site-header .header-book{padding:7px 11px}}
+/* Hero overlay: light ivory */
+.hero-bg,.hero-bg-soft{background:#f1e9de;color:var(--ink)}
+.hero-bg::before{background:linear-gradient(90deg,#f8f4eef7 0%,#f8f4eee6 34%,#f1e9dea6 54%,#f1e9de26 76%,#f1e9de00 90%)}
+.hero-bg::after{display:none}
+.hero-bg-soft::before{background:linear-gradient(180deg,#f8f4eee8 0%,#f1e9dee0 100%)}
+.hero-bg h1,.hero-bg-soft h1{color:var(--ink)}
+.hero-bg h1 em,.hero-bg-soft h1 em{color:var(--plum)}
+.hero-bg .hero-description,.hero-bg-soft .lead{color:#463b42}
+.hero-bg .eyebrow-glass,.hero-bg-soft .eyebrow{color:var(--plum);border-color:#cdbda6;background:#ffffff80}
+.hero-bg .button-light{background:var(--plum);color:#fff;border-color:var(--plum);box-shadow:0 10px 30px #5f164126}
+.hero-bg .button-light:hover{background:var(--plum-deep);border-color:var(--plum-deep);color:#fff}
+.hero-bg .button-glass{color:var(--plum);border-color:#cdbda6;background:#ffffff80}
+.hero-bg .button-glass:hover{color:var(--plum);border-color:var(--plum);background:#fff}
+/* header over a light hero */
+.has-overlay-header:not(.scrolled) .site-header{border-bottom-color:var(--line)}
+.has-overlay-header:not(.scrolled) .site-header .logo-light{display:none}
+.has-overlay-header:not(.scrolled) .site-header .logo:not(.logo-light){display:block}
+.has-overlay-header:not(.scrolled) .site-nav a{color:#3d3339}
+.has-overlay-header:not(.scrolled) .site-nav a:hover,.has-overlay-header:not(.scrolled) .site-nav a[aria-current="page"]{color:var(--plum)}
+.has-overlay-header:not(.scrolled) .site-nav a::after{background:var(--plum)}
+.has-overlay-header:not(.scrolled) .header-book{background:var(--plum);color:#fff;border-color:var(--plum)}
+.has-overlay-header:not(.scrolled) .nav-toggle{border-color:var(--line-strong)}
+@media (max-width:900px){.hero-bg::before{background:linear-gradient(0deg,#f8f4eef7 0%,#f8f4eee6 42%,#f1e9de99 68%,#f1e9de33 100%)}}
+@media (max-width:700px){
+  .hero-bg::before{background:linear-gradient(180deg,#f8f4ee99 0,#f8f4ee00 140px)}
+  .hero-bg .hero-media::after{background:linear-gradient(180deg,#f1e9de00 30%,#f1e9deb3 62%,#f1e9de 100%)}
+}
+.has-overlay-header:not(.scrolled) .nav-toggle .bar,.has-overlay-header:not(.scrolled) .nav-toggle .bar::before,.has-overlay-header:not(.scrolled) .nav-toggle .bar::after{background:var(--ink)}
+.nav-open .has-overlay-header:not(.scrolled) .nav-toggle .bar,body.nav-open .has-overlay-header:not(.scrolled) .nav-toggle .bar{background:transparent}
+/* ===== Upscale cream: solid nav, soft gradients ===== */
+.site-header,.has-overlay-header .site-header,.has-overlay-header.scrolled .site-header,.has-overlay-header:not(.scrolled) .site-header{
+  margin-bottom:0;background:#f8f4ee;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:1px solid #e8decf}
+.scrolled .site-header{box-shadow:0 6px 24px -18px #3a2d2559}
+/* hero no longer sits under the header */
+.hero-inner{padding-top:48px}
+@media (min-width:901px){.hero-inner{min-height:min(640px,calc(86svh - var(--header-h)));padding:56px 0 72px}}
+.page-hero.hero-bg-soft{padding:96px 0 88px}
+@media (max-width:900px){.hero-inner{padding-top:10px}.page-hero.hero-bg-soft{padding:60px 0 56px}}
+@media (max-width:700px){.hero-inner{padding-top:calc(17svh + 24px - var(--header-h))}}
+/* page + section gradients */
+body{background:#f8f4ee}
+.section-tint,.section.section-tint{background:radial-gradient(90% 70% at 0% 0%,#f8f4eecc 0%,#f8f4ee00 60%),linear-gradient(165deg,#f1e9de 0%,#ebe1d3 100%)}
+.site-footer{background:linear-gradient(180deg,#f1e9de 0%,#e8decf 100%)}
+.brands{background:linear-gradient(180deg,#f8f4ee 0%,#f3ece2 100%)}
+.brand-tile,.gift-card,.compare-wrap{background:linear-gradient(160deg,#fffdf9 0%,#f8f4ee 100%)}
+.visit-card,.gift-him{background:linear-gradient(145deg,#f1e9de 0%,#f8f4ee 80%)}
+.mobile-book{background:#f8f4ee}
+/* ===== Classic / understated design details ===== */
+:root{--gold-line:#b89a5e;--gold-soft:#c8b083}
+/* faint paper grain */
+body{background-color:#f8f4ee;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.38 0 0 0 0 0.3 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+/* eyebrow: gold hairline with a small diamond */
+.eyebrow::before{width:26px;height:1px;background:var(--gold-line);opacity:1}
+.eyebrow::after{content:"";width:5px;height:5px;background:var(--gold-line);transform:rotate(45deg);margin-left:-8px;order:-1;flex:none;display:none}
+.eyebrow{color:#7a6248}
+.hero-bg .eyebrow-glass,.hero-bg-soft .eyebrow{background:none;border:0;color:#7a6248}
+.section-head.center .eyebrow::after,.page-hero .eyebrow::after{content:"";display:block;order:0;width:26px;height:1px;background:var(--gold-line);transform:none;margin:0}
+.cta-band .eyebrow,.fcb .eyebrow,.wire-band .eyebrow{color:#f7e58a}
+/* roman numerals */
+.fc-num,.price-intro .num{font-style:normal;font-variant:small-caps;letter-spacing:.18em;font-size:1.05rem;color:var(--gold-line);display:flex;align-items:center;gap:12px}
+.fc-num::after,.price-intro .num::after{content:"";width:34px;height:1px;background:var(--gold-soft)}
+.fc-steps li,.ef-benefits li{border-top:1px solid var(--gold-soft)}
+/* buttons: slimmer, tailored */
+.button{border-radius:4px;text-transform:uppercase;letter-spacing:.12em;font-size:.84rem;font-weight:600;min-height:48px;padding:13px 26px;box-shadow:none}
+.button:hover{transform:none}
+.site-header .header-book{letter-spacing:.1em;font-size:.78rem}
+@media (max-width:600px){.site-header .header-book{font-size:.74rem;letter-spacing:.08em;padding:7px 12px}}
+/* passe-partout frames on photos */
+.service-card .media,.portrait,.photo-grid .tile,.gift-media{position:relative;border-radius:6px}
+.service-card .media::after,.portrait::after,.photo-grid .tile::after{content:"";position:absolute;inset:10px;border:1px solid #ffffff8c;border-radius:3px;pointer-events:none;box-shadow:none}
+/* credentials strip */
+.credentials{padding:30px 0;border-bottom:1px solid #e8decf;background:linear-gradient(180deg,#f8f4ee 0%,#f1e9de 100%)}
+.cred-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.cred-list li{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;padding:6px 16px;position:relative}
+.cred-list li+li::before{content:"";position:absolute;left:-3px;top:50%;width:6px;height:6px;background:var(--gold-line);transform:translateY(-50%) rotate(45deg)}
+.cred-big{font-family:var(--serif);font-size:1.6rem;line-height:1.1;color:var(--ink);letter-spacing:-.01em}
+.cred-list li span:last-child{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#7a6248;font-weight:600}
+@media (max-width:760px){.cred-list{grid-template-columns:1fr 1fr;row-gap:18px}.cred-list li:nth-child(3)::before{display:none}.cred-big{font-size:1.35rem}}
+/* centered heading ornament */
+.section-head.center h2::after,.cta-band h2::after{content:"";display:block;width:60px;height:9px;margin:18px auto 0;background:
+ linear-gradient(var(--gold-line),var(--gold-line)) left center/24px 1px no-repeat,
+ linear-gradient(var(--gold-line),var(--gold-line)) right center/24px 1px no-repeat,
+ linear-gradient(45deg,transparent 40%,var(--gold-line) 40% 60%,transparent 60%) center/9px 9px no-repeat}
+.cta-band h2::after{filter:brightness(1.6)}
+/* tag pills: quieter */
+.tag{border-radius:3px;letter-spacing:.12em}
+.feature-grid article::before{content:counter(feat,upper-roman);font-style:normal;font-variant:small-caps;letter-spacing:.18em;font-size:1.05rem;color:var(--gold-line)}
+.visit-card{background:none}
+:root{--gold-line:#a8884f}
+.feature-grid article::before{font-size:1.2rem}
+@media (max-width:700px){.hero-bg .eyebrow-glass{background:#f8f4eee6;padding:6px 10px;border-radius:2px}}
+/* Products we trust: single column */
+.brands-grid{grid-template-columns:1fr;gap:34px;justify-items:center;text-align:center}
+.brands-copy{max-width:720px}
+.brands-copy .eyebrow{justify-content:center}
+.brands-copy .eyebrow::after{content:"";display:block;width:26px;height:1px;background:var(--gold-line);transform:none;margin:0;order:0}
+.brands-copy p{max-width:none;margin:0 auto}
+.brand-list{width:100%;max-width:780px;text-align:left}
+.brand-tile{border-radius:6px}
+/* lighter ivory overlay */
+.hero-bg::before{background:linear-gradient(90deg,#f8f4eee0 0%,#f8f4eec2 32%,#f1e9de73 52%,#f1e9de14 74%,#f1e9de00 88%)}
+.hero-bg-soft::before{background:linear-gradient(180deg,#f8f4eec4 0%,#f1e9debd 100%)}
+@media (max-width:900px){.hero-bg::before{background:linear-gradient(0deg,#f8f4eee8 0%,#f8f4eec7 42%,#f1e9de66 68%,#f1e9de1a 100%)}}
+@media (max-width:700px){.hero-bg::before{background:linear-gradient(180deg,#f8f4ee80 0,#f8f4ee00 120px)}}
+/* ===== Homepage hero: two columns, photo inline ===== */
+.hero-split{padding:72px 0 80px;background:radial-gradient(70% 90% at 100% 0%,#f1e9de 0%,#f1e9de00 60%),linear-gradient(180deg,#f8f4ee 0%,#f3ece2 100%);border-bottom:1px solid #e8decf}
+.hero-split-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px;align-items:center}
+.hero-split .hero-copy{max-width:600px;margin:0;padding:0}
+.hero-split h1{font-size:clamp(44px,4.6vw,72px);line-height:1;letter-spacing:-.03em;font-weight:380;margin-top:24px;color:var(--ink);text-wrap:balance}
+.hero-split h1 em{color:var(--plum)}
+.hero-split .hero-description{font-size:1.125rem;line-height:1.75;color:#463b42;margin-top:24px;max-width:520px}
+.hero-split .hero-actions{justify-content:flex-start;margin-top:34px}
+.hero-photo{position:relative;margin:0;justify-self:end;width:100%;max-width:560px}
+.hero-photo::before{content:"";position:absolute;inset:-16px 16px 16px -16px;border:1px solid var(--gold-soft);border-radius:4px;z-index:0}
+.hero-photo-pic,.hero-photo-pic img{display:block;width:100%}
+.hero-photo-pic{position:relative;z-index:1;aspect-ratio:4/5;overflow:hidden;border-radius:4px;box-shadow:0 30px 60px -30px #3a2d2580,0 2px 6px #3a2d2514}
+.hero-photo-pic img{height:100%;object-fit:cover;object-position:72% 45%}
+.hero-photo-pic::after{content:"";position:absolute;inset:12px;border:1px solid #ffffffa6;border-radius:2px;pointer-events:none}
+@media (prefers-reduced-motion:no-preference){.hero-photo-pic img{animation:heroZoom 18s ease-out both}}
+@media (max-width:1100px){.hero-split-grid{gap:48px}}
+@media (max-width:900px){
+  .hero-split{padding:28px 0 48px}
+  .hero-split-grid{grid-template-columns:1fr;gap:34px}
+  .hero-photo{order:-1;justify-self:stretch;max-width:none}
+  .hero-photo::before{inset:-10px 10px 10px -10px}
+  .hero-photo-pic{aspect-ratio:4/3}
+  .hero-split .hero-copy{max-width:none}
+}
+@media (max-width:600px){
+  .hero-split h1{font-size:clamp(38px,10.5vw,50px)}
+  .hero-split .hero-description{font-size:1rem}
+  .hero-split .hero-actions .button{flex:1 1 100%}
+  .hero-photo-pic{aspect-ratio:5/4}
+  .hero-photo::before{display:none}
+}
+/* ===== Split heroes everywhere, simpler headers, outer accent frames ===== */
+/* no inner borders on photos */
+.service-card .media::after,.portrait::after,.photo-grid .tile::after,.hero-photo-pic::after{display:none}
+/* hero photo frame (outer gold accent) */
+.hero-photo .portrait{border-radius:4px;box-shadow:0 30px 60px -30px #3a2d2580,0 2px 6px #3a2d2514;position:relative;z-index:1}
+.hero-photo{position:relative}
+/* copy left, image right on the about-style heroes */
+.about-hero .about-split{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px}
+.about-hero .about-split>.hero-photo{order:2;justify-self:end;width:100%;max-width:540px}
+.about-hero{background:radial-gradient(70% 90% at 100% 0%,#f1e9de 0%,#f1e9de00 60%),linear-gradient(180deg,#f8f4ee 0%,#f3ece2 100%);border-bottom:1px solid #e8decf}
+/* simpler inner-page headers */
+.hero-split-page{padding:56px 0 64px}
+.hero-split-page h1{font-size:clamp(40px,3.8vw,60px)}
+.hero-split-page .hero-description{font-size:1.0625rem}
+.hero-split-page .hero-photo{max-width:520px}
+.hero-split-page .hero-photo-pic{aspect-ratio:4/3}
+/* mobile: copy first, then image */
+@media (max-width:900px){
+  .hero-photo{order:0;justify-self:stretch}
+  .about-hero .about-split{grid-template-columns:1fr;gap:34px}
+  .about-hero .about-split>.hero-photo{order:2;justify-self:stretch;max-width:none}
+  .hero-split{padding:36px 0 52px}
+  .hero-split-page{padding:32px 0 48px}
+  .hero-photo::before{display:block;inset:-10px 10px 10px -10px}
+  .hero-photo{margin-left:10px}
+}
+@media (max-width:600px){.hero-photo-pic{aspect-ratio:4/3}}
+.hero-split-page + .section{padding-top:80px!important}@media (max-width:900px){.hero-split-page + .section{padding-top:52px!important}}
+/* more generous sections; whiter alternating panels */
+.section{padding:120px 0}
+@media (max-width:900px){.section{padding:80px 0}}
+@media (max-width:600px){.section{padding:68px 0}}
+.section-tint,.section.section-tint{background:radial-gradient(80% 60% at 0% 0%,#ffffff 0%,#ffffff00 60%),linear-gradient(170deg,#fffdfa 0%,#fbf8f3 100%);border-top:1px solid #efe8dd;border-bottom:1px solid #efe8dd}
+.hero-split-page + .section{padding-top:96px!important}
+@media (max-width:900px){.hero-split-page + .section{padding-top:60px!important}}
+/* eyebrow: wavy gold brush stroke */
+.eyebrow::before,.section-head.center .eyebrow::after,.page-hero .eyebrow::after,.brands-copy .eyebrow::after{content:"";display:block;width:42px;height:10px;flex:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 14'%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f'/%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f' opacity='.3' transform='translate%281 .7%29'/%3E%3C/svg%3E") center/contain no-repeat;opacity:1;border-radius:0;box-shadow:none;transform:none;margin:0}
+.section-head.center .eyebrow::after,.page-hero .eyebrow::after,.brands-copy .eyebrow::after{transform:scaleX(-1)}
+.cta-band .eyebrow::before,.fcb .eyebrow::before,.wire-band .eyebrow::before{filter:brightness(1.7)}
+/* ===== Gallery: centred, text-only header ===== */
+.hero-centered{text-align:center;padding:72px 0 24px}
+.hero-centered .hero-copy{max-width:720px;margin:0 auto}
+.hero-centered .eyebrow{justify-content:center}
+.hero-centered .eyebrow::after{content:"";display:block;width:42px;height:10px;flex:none;background:inherit;transform:scaleX(-1)}
+.hero-centered .hero-description{margin-left:auto;margin-right:auto}
+.hero-centered + .section{padding-top:48px!important}
+@media (max-width:900px){.hero-centered{padding:44px 0 12px}.hero-centered + .section{padding-top:32px!important}}
+/* ===== Elegant buttons with hover arrow ===== */
+.button{position:relative;border-radius:2px;border-width:1px;padding:14px 30px;min-height:50px;font-size:.8rem;letter-spacing:.18em;font-weight:600;gap:10px;
+  transition:background .35s ease,color .35s ease,border-color .35s ease,padding .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+.button::after{content:"";width:0;height:12px;flex:none;margin-left:-10px;opacity:0;background:currentColor;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12'%3E%3Cpath d='M0 6h22M17 1l5 5-5 5' fill='none' stroke='black' stroke-width='1.3'/%3E%3C/svg%3E") left center/24px 12px no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12'%3E%3Cpath d='M0 6h22M17 1l5 5-5 5' fill='none' stroke='black' stroke-width='1.3'/%3E%3C/svg%3E") left center/24px 12px no-repeat;
+  transition:width .35s cubic-bezier(.2,.7,.2,1),opacity .3s ease,margin .35s cubic-bezier(.2,.7,.2,1)}
+.button:hover::after,.button:focus-visible::after{width:24px;opacity:1;margin-left:0}
+.button:hover{transform:none;box-shadow:0 10px 24px -14px #3a2d2566}
+/* primary: deep plum, refined */
+.button:not(.button-secondary):not(.button-ghost):not(.button-glass){background:linear-gradient(180deg,#7f2257 0%,#6a1847 100%);border-color:#6a1847;color:#fff}
+.button:not(.button-secondary):not(.button-ghost):not(.button-glass):hover{background:linear-gradient(180deg,#6a1847 0%,#551237 100%);border-color:#551237;color:#fff}
+/* secondary: hairline outline */
+.button-secondary{background:transparent;color:var(--ink);border-color:#bfae93;box-shadow:none}
+.button-secondary:hover{background:#ffffffb3;border-color:var(--gold-line);color:var(--plum)}
+/* on plum bands */
+.cta-band .button:not(.button-ghost),.fcb .button,.wire-band .button{background:#f8f4ee!important;color:var(--plum)!important;border-color:#f8f4ee!important}
+.cta-band .button:not(.button-ghost):hover,.fcb .button:hover{background:#fff!important}
+.cta-band .button-ghost{border-color:#ffffff73;color:#fff}
+.cta-band .button-ghost:hover{background:#ffffff14;border-color:#fff;color:#fff}
+/* compact header button: no arrow */
+.site-header .header-book::after,.mobile-book .button::after,.filter::after{display:none}
+.site-header .header-book{border-radius:2px}
+@media (hover:none){.button::after{display:none}}
+.hero-centered .eyebrow::after{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 14'%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f'/%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f' opacity='.3' transform='translate%281 .7%29'/%3E%3C/svg%3E") center/contain no-repeat;width:42px;height:10px}
+/* hover arrow without changing button width */
+.button::after{position:absolute;right:18px;top:50%;margin:-6px 0 0;width:24px;opacity:0;transform:translateX(-8px);transition:opacity .3s ease,transform .35s cubic-bezier(.2,.7,.2,1)}
+.button:hover::after,.button:focus-visible::after{opacity:1;transform:none;margin:-6px 0 0;width:24px}
+.button:hover,.button:focus-visible{padding-left:20px;padding-right:40px}
+.site-header .header-book:hover,.filter:hover{padding-left:revert-layer;padding-right:revert-layer}
+.button{padding-left:36px;padding-right:36px}
+.button:hover,.button:focus-visible{padding-left:18px;padding-right:54px}
+.button::after{right:18px}
+.hero-centered .eyebrow::after,.section-head.center .eyebrow::after,.page-hero .eyebrow::after,.brands-copy .eyebrow::after{order:1}
+@media (max-width:600px){.button{padding-left:22px;padding-right:22px}}
+@media (min-width:901px){.site-header .header-book,.site-header .header-book:hover{padding:10px 22px;min-height:42px}}
+.lead.lead-2line{max-width:none;font-size:1.0625rem}
+@media (min-width:1101px){.lead.lead-2line{white-space:nowrap}}
+@media (max-width:1100px){.lead.lead-2line br{display:none}.lead.lead-2line{max-width:760px}}
+@media (min-width:1101px){.lead.lead-2line{width:max-content;max-width:100%;margin-left:auto;margin-right:auto}}
+@media (min-width:1101px){.lead.lead-2line{position:relative;left:50%;transform:translateX(-50%);margin-left:0;margin-right:0}}
+@media (min-width:1101px){.lead.lead-2line{max-width:none}}
+/* ===== Gallery intro inside the gallery section ===== */
+.gallery-section{padding-top:80px!important}
+.gallery-head{margin-bottom:36px}
+.gallery-head h1{font-size:clamp(40px,3.8vw,60px);margin-top:18px}
+@media (max-width:900px){.gallery-section{padding-top:48px!important}.gallery-head{margin-bottom:26px}}
+/* ===== Footer CTA: simple white ===== */
+.cta-band{background:#fff!important;color:var(--ink);border-top:1px solid #efe8dd;border-bottom:1px solid #efe8dd}
+.cta-band::before{display:none}
+.cta-band h2{color:var(--ink)}
+.cta-band h2 em{color:var(--plum)}
+.cta-band h2::after{filter:none}
+.cta-band p{color:var(--muted)}
+.cta-band .button:not(.button-ghost){background:linear-gradient(180deg,#7f2257 0%,#6a1847 100%)!important;color:#fff!important;border-color:#6a1847!important}
+.cta-band .button:not(.button-ghost):hover{background:linear-gradient(180deg,#6a1847 0%,#551237 100%)!important;border-color:#551237!important}
+.cta-band .button-ghost{background:transparent;color:var(--ink);border-color:#bfae93}
+.cta-band .button-ghost:hover{background:#f8f4ee;border-color:var(--gold-line);color:var(--plum)}
+.cta-band .eyebrow{color:#7a6248}
+.cta-band .eyebrow::before{filter:none}
+/* heading ornament: wavy brush stroke (replaces line-diamond-line) */
+.section-head.center h2::after,.cta-band h2::after{width:64px;height:15px;margin:20px auto 0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 14'%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f'/%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f' opacity='.3' transform='translate%281 .7%29'/%3E%3C/svg%3E") center/contain no-repeat;filter:none}
+/* ===== Arrow-circle buttons (Rezilient style, adapted) ===== */
+:root{--btn-circle:36px;--btn-arrow:16px;--btn-gap:6px;
+  --btn-arrow-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E")}
+.button{position:relative;overflow:visible;gap:0;padding:6px calc(var(--btn-circle) + 18px) 6px 26px;min-height:48px;
+  transition:background .25s,color .25s,border-color .25s,padding .25s ease,margin .25s ease,box-shadow .25s}
+.button:hover,.button:focus-visible{padding:6px 26px 6px 26px;margin-right:calc(var(--btn-circle) + var(--btn-gap));box-shadow:none}
+.button::before,.button::after{content:"";position:absolute;top:50%;transform:translateY(-50%);pointer-events:none;opacity:1;margin:0;transition:right .25s ease,background-color .25s ease}
+.button::before{right:6px;width:var(--btn-circle);height:var(--btn-circle);border-radius:50%;background:var(--btn-circle-bg,#f8f4ee);z-index:1}
+.button::after{right:calc(6px + (var(--btn-circle) - var(--btn-arrow))/2);width:var(--btn-arrow);height:var(--btn-arrow);
+  background-color:var(--btn-arrow-color,var(--plum));-webkit-mask:var(--btn-arrow-icon) center/contain no-repeat;mask:var(--btn-arrow-icon) center/contain no-repeat;z-index:2}
+.button:hover::before,.button:focus-visible::before{right:calc(-1 * (var(--btn-circle) + var(--btn-gap)) - 1px);background:var(--btn-circle-hover,var(--gold-line))}
+.button:hover::after,.button:focus-visible::after{right:calc(-1 * (var(--btn-circle) + var(--btn-gap)) - 1px + (var(--btn-circle) - var(--btn-arrow))/2);width:var(--btn-arrow);opacity:1;transform:translateY(-50%);background-color:var(--btn-arrow-hover,#fff)}
+/* outline buttons: plum circle, white arrow */
+.button-secondary,.cta-band .button-ghost,.button-ghost{--btn-circle-bg:var(--plum);--btn-arrow-color:#fff}
+/* light buttons on plum bands */
+.fcb .button,.wire-band .button{--btn-circle-bg:var(--plum);--btn-arrow-color:#fff;--btn-circle-hover:#f8f4ee;--btn-arrow-hover:var(--plum)}
+/* no circle on compact / utility buttons */
+.site-header .header-book,.mobile-book .button,.filter{padding:8px 20px}
+.site-header .header-book::before,.site-header .header-book::after,.mobile-book .button::before,.mobile-book .button::after{display:none}
+.site-header .header-book:hover{margin-right:0;padding:8px 20px}
+@media (min-width:901px){.site-header .header-book,.site-header .header-book:hover{padding:10px 22px}}
+@media (max-width:600px){.site-header .header-book,.site-header .header-book:hover{padding:7px 12px}}
+/* touch devices: keep circle inside, no slide */
+@media (hover:none){.button::before,.button::after{display:block}.button:hover{margin-right:0;padding:6px calc(var(--btn-circle) + 18px) 6px 26px}
+  .button:hover::before{right:6px;background:var(--btn-circle-bg,#f8f4ee)}.button:hover::after{right:calc(6px + (var(--btn-circle) - var(--btn-arrow))/2);background-color:var(--btn-arrow-color,var(--plum))}}
+@media (max-width:600px){.button{padding-left:20px}}
+@media (prefers-reduced-motion:reduce){.button,.button::before,.button::after{transition:none}}
+.button:hover::after,.button:focus-visible::after{margin:0;height:var(--btn-arrow)}
+/* ===== Buttons: no arrows ===== */
+.button::before,.button::after{display:none!important}
+.button,.button:hover,.button:focus-visible{padding:12px 30px;margin-right:0;gap:8px}
+@media (max-width:600px){.button,.button:hover{padding:12px 22px}}
+.site-header .header-book,.site-header .header-book:hover{padding:8px 20px}
+@media (min-width:901px){.site-header .header-book,.site-header .header-book:hover{padding:10px 22px}}
+@media (max-width:600px){.site-header .header-book,.site-header .header-book:hover{padding:7px 12px}}
+/* ===== Homepage: full-width hero ===== */
+.hero-full{padding:120px 0 150px;text-align:center;background:radial-gradient(60% 80% at 50% 0%,#ffffff 0%,#ffffff00 70%),linear-gradient(180deg,#f8f4ee 0%,#f1e9de 100%)}
+.hero-full .hero-copy{max-width:980px;margin:0 auto;padding:0}
+.hero-full .eyebrow{justify-content:center}
+.hero-full .eyebrow::after{content:"";display:block;width:42px;height:10px;flex:none;order:1;transform:scaleX(-1);background:inherit}
+.hero-full h1{font-size:clamp(46px,6.4vw,96px);line-height:.98;letter-spacing:-.035em;font-weight:360;margin-top:26px;color:var(--ink);text-wrap:balance}
+.hero-full h1 em{color:var(--plum)}
+.hero-full .hero-actions{justify-content:center;margin-top:40px}
+/* ===== Overlapping collage bridging into services ===== */
+.collage{position:relative;z-index:2;margin:-110px 0 -150px;pointer-events:none}
+.collage-inner{position:relative;height:500px}
+.cl{position:absolute;margin:0;overflow:hidden;border-radius:4px;box-shadow:0 30px 60px -28px #3a2d2575,0 2px 8px #3a2d2514;background:#e8decf}
+.cl img{display:block;width:100%;height:100%;object-fit:cover}
+.cl-1{left:2%;top:70px;width:21%;aspect-ratio:4/5;transform:rotate(-3deg)}
+.cl-2{left:21%;top:0;width:36%;aspect-ratio:5/4;z-index:2}
+.cl-2 img{object-position:60% 45%}
+.cl-3{left:53%;top:120px;width:30%;aspect-ratio:3/2;z-index:3;transform:rotate(2deg)}
+.cl-4{left:80%;top:30px;width:17%;aspect-ratio:4/5;z-index:1;transform:rotate(4deg)}
+#services{padding-top:230px!important;position:relative;z-index:1}
+@media (max-width:900px){
+  .hero-full{padding:70px 0 110px}
+  .collage{margin:-80px 0 -100px}
+  .collage-inner{height:300px}
+  .cl-1{left:0;top:50px;width:30%}
+  .cl-2{left:20%;top:0;width:48%}
+  .cl-3{left:52%;top:110px;width:46%}
+  .cl-4{display:none}
+  #services{padding-top:150px!important}
+}
+@media (max-width:520px){
+  .collage-inner{height:230px}
+  .cl-1{top:44px;width:34%}.cl-2{left:18%;width:56%}.cl-3{left:48%;top:96px;width:52%}
+  #services{padding-top:130px!important}
+}
+.hero-full .eyebrow::after{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 14'%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f'/%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f' opacity='.3' transform='translate%281 .7%29'/%3E%3C/svg%3E") center/contain no-repeat}
+#services{padding-top:170px!important}
+.cl-3 img{object-position:50% 30%}
+@media (max-width:900px){#services{padding-top:130px!important}}
+@media (max-width:520px){#services{padding-top:110px!important}}
+/* brands intro on two lines */
+.brands-copy{max-width:1100px}
+.brands-copy p.two-line{font-size:1.0625rem}
+@media (min-width:1101px){.brands-copy p.two-line{white-space:nowrap}}
+@media (max-width:1100px){.brands-copy p.two-line br{display:none}.brands-copy p.two-line{max-width:720px}}
+/* advanced pedicure as a services subsection */
+.svc-sub{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-top:48px;padding:34px 40px;border:1px solid #e8decf;border-radius:4px;background:linear-gradient(135deg,#ffffff 0%,#f8f4ee 100%);transition:border-color .25s,box-shadow .25s}
+.svc-sub:hover{border-color:var(--gold-soft);box-shadow:0 18px 40px -28px #3a2d2566}
+.svc-sub h3{font-size:clamp(26px,2.2vw,32px);margin:10px 0 8px;color:var(--ink)}
+.svc-sub h3 em{color:var(--plum)}
+.svc-sub p{color:var(--muted);line-height:1.7;max-width:640px;margin:0}
+.svc-sub-meta{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex:none;text-align:right}
+.svc-sub-link{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--plum);border-bottom:1px solid var(--gold-soft);padding-bottom:2px}
+@media (max-width:760px){.svc-sub{flex-direction:column;align-items:flex-start;gap:18px;padding:26px 22px}.svc-sub-meta{align-items:flex-start;text-align:left;flex-direction:row;gap:20px}}
+/* advanced pedicure subsection: no box */
+.svc-sub{border:0;border-top:1px solid #e8decf;border-radius:0;background:none;padding:36px 0 0;margin-top:56px}
+.svc-sub:hover{box-shadow:none;border-color:#e8decf}
+.svc-sub:hover h3{color:var(--plum)}
+@media (max-width:760px){.svc-sub{padding:28px 0 0}}
+/* product tiles: bigger logos & text, square corners */
+.svc-sub{align-items:center}
+.brand-list{max-width:900px;gap:24px}
+.brand-tile{border-radius:0;padding:40px 36px}
+.brand-logo{display:flex;align-items:center;height:84px;margin-bottom:18px}
+.brand-logo[data-brand=gehwol] img{max-height:80px;width:auto}
+.brand-logo[data-brand=akzentz] img{max-height:60px;width:auto}
+.brand-tile p{font-size:1.0625rem;line-height:1.7;color:var(--muted)}
+@media (max-width:560px){.brand-tile{padding:30px 24px}.brand-logo{height:68px}.brand-logo[data-brand=gehwol] img{max-height:64px}.brand-logo[data-brand=akzentz] img{max-height:48px}}
+.brand-logo img{max-width:none}.brand-logo[data-brand="gehwol"] img{max-height:80px}.brand-logo[data-brand="akzentz"] img{max-height:60px}@media (max-width:560px){.brand-logo[data-brand="gehwol"] img{max-height:64px}.brand-logo[data-brand="akzentz"] img{max-height:48px}}
+/* advanced pedicure row styled like the service cards */
+.svc-sub.service-card{display:block;margin-top:48px;padding:30px 0 0;border:0;border-top:1px solid #e8decf;background:none;box-shadow:none;border-radius:0}
+.svc-sub.service-card .body{padding:0;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.svc-sub.service-card .meta{margin-top:0;padding-top:0;border:0}
+.svc-sub.service-card h3{margin:0}
+@media (max-width:600px){.svc-sub.service-card .body{flex-direction:column;align-items:flex-start;gap:10px}}
+.svc-sub.service-card,.svc-sub.service-card .body{text-align:left}.svc-sub.service-card .body{flex-direction:row}@media (max-width:600px){.svc-sub.service-card .body{flex-direction:column}}
+.svc-sub.service-card .body,.svc-sub.service-card .body{flex-direction:column;align-items:flex-start;gap:10px}.svc-sub.service-card h3{font-size:1.45rem}
+.svc-sub.service-card .body p{margin:0;max-width:640px}
+.svc-sub.service-card .body p{max-width:none}
+/* Recent work heading: no ornament */
+#work .section-head h2::after{display:none}
+/* ===== Approach: dry manicure highlight + simple steps ===== */
+.dry-feature{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:center}
+.dry-media{display:grid;grid-template-columns:1fr 1fr;gap:18px;position:relative}
+.dry-media::before{content:"";position:absolute;inset:-16px 16px 16px -16px;border:1px solid var(--gold-soft);border-radius:2px}
+.dry-media figure{margin:0;position:relative;z-index:1;aspect-ratio:3/4;overflow:hidden;border-radius:2px;box-shadow:0 26px 50px -30px #3a2d2580}
+.dry-media figure:nth-child(2){margin-top:48px}
+.dry-media img{width:100%;height:100%;object-fit:cover;display:block}
+.dry-copy h2{font-size:clamp(34px,3.4vw,52px);line-height:1.04;margin:20px 0 18px}
+.dry-copy h2 em{color:var(--plum)}
+.dry-copy p{font-size:1.125rem;line-height:1.8;color:var(--muted);max-width:480px}
+.dry-copy .hero-actions{justify-content:flex-start;margin-top:30px}
+.approach-steps{list-style:none;margin:96px 0 0;padding:44px 0 0;border-top:1px solid #e8decf;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;counter-reset:ap}
+.approach-steps li{counter-increment:ap}
+.approach-steps li::before{content:counter(ap,upper-roman);display:block;font-family:var(--serif);font-variant:small-caps;letter-spacing:.18em;color:var(--gold-line);font-size:1.05rem;margin-bottom:10px}
+.approach-steps h3{font-size:1.4rem;margin:0 0 6px}
+.approach-steps p{color:var(--muted);margin:0;line-height:1.6}
+@media (max-width:900px){
+  .dry-feature{grid-template-columns:1fr;gap:44px}
+  .dry-copy{order:-1}
+  .dry-media{margin-left:12px}.dry-media::before{inset:-12px 12px 12px -12px}
+  .approach-steps{grid-template-columns:1fr;gap:26px;margin-top:64px}
+}
+@media (max-width:900px){.dry-media{width:calc(100% - 12px);gap:12px}.dry-media figure:nth-child(2){margin-top:32px}}
+.approach-steps li::before{display:none}
+/* mobile: buttons sit inline, auto width */
+@media (max-width:600px){
+  .hero-actions{flex-wrap:wrap;gap:10px}
+  .hero-actions .button,.hero-split .hero-actions .button,.hero-bg .hero-actions .button,.cta-band .hero-actions .button{flex:0 0 auto;width:auto}
+  .button,.button:hover{padding:11px 16px;font-size:.72rem;letter-spacing:.14em;min-height:44px}
+}
+/* gallery filters: keep size on hover */
+.filter,.filter:hover,.filter:focus-visible{padding:11px 20px;margin-right:0}
+/* services numerals: wave after */
+.price-intro .num::after{width:42px;height:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 14'%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f'/%3E%3Cpath d='M2.00,8.10 L2.70,8.38 L3.40,8.66 L4.10,8.92 L4.80,9.14 L5.50,9.31 L6.20,9.44 L6.90,9.52 L7.60,9.54 L8.30,9.51 L9.00,9.42 L9.70,9.28 L10.40,9.10 L11.10,8.86 L11.80,8.58 L12.50,8.26 L13.20,7.91 L13.90,7.53 L14.60,7.13 L15.30,6.71 L16.00,6.29 L16.70,5.86 L17.40,5.45 L18.10,5.04 L18.80,4.66 L19.50,4.30 L20.20,3.98 L20.90,3.69 L21.60,3.45 L22.30,3.26 L23.00,3.11 L23.70,3.02 L24.40,2.98 L25.10,2.99 L25.80,3.06 L26.50,3.17 L27.20,3.34 L27.90,3.56 L28.60,3.82 L29.30,4.11 L30.00,4.44 L30.70,4.80 L31.40,5.17 L32.10,5.56 L32.80,5.96 L33.50,6.36 L34.20,6.76 L34.90,7.14 L35.60,7.50 L36.30,7.83 L37.00,8.14 L37.70,8.40 L38.40,8.63 L39.10,8.81 L39.80,8.95 L40.50,9.03 L41.20,9.06 L41.90,9.04 L42.60,8.97 L43.30,8.85 L44.00,8.68 L44.70,8.46 L45.40,8.21 L46.10,7.92 L46.80,7.60 L47.50,7.25 L48.20,6.89 L48.90,6.52 L49.60,6.14 L50.30,5.76 L51.00,5.39 L51.70,5.04 L52.40,4.72 L53.10,4.42 L53.80,4.16 L54.50,3.94 L55.20,3.77 L55.90,3.65 L56.60,3.58 L57.30,3.58 L58.00,3.66 L58.00,3.96 L57.30,4.03 L56.60,4.12 L55.90,4.27 L55.20,4.46 L54.50,4.71 L53.80,5.01 L53.10,5.35 L52.40,5.73 L51.70,6.15 L51.00,6.59 L50.30,7.04 L49.60,7.52 L48.90,7.99 L48.20,8.46 L47.50,8.92 L46.80,9.35 L46.10,9.76 L45.40,10.14 L44.70,10.47 L44.00,10.75 L43.30,10.99 L42.60,11.16 L41.90,11.28 L41.20,11.34 L40.50,11.33 L39.80,11.27 L39.10,11.14 L38.40,10.95 L37.70,10.71 L37.00,10.42 L36.30,10.09 L35.60,9.71 L34.90,9.31 L34.20,8.88 L33.50,8.44 L32.80,7.98 L32.10,7.53 L31.40,7.09 L30.70,6.66 L30.00,6.26 L29.30,5.88 L28.60,5.55 L27.90,5.26 L27.20,5.02 L26.50,4.84 L25.80,4.71 L25.10,4.64 L24.40,4.63 L23.70,4.68 L23.00,4.79 L22.30,4.95 L21.60,5.17 L20.90,5.44 L20.20,5.75 L19.50,6.10 L18.80,6.48 L18.10,6.89 L17.40,7.31 L16.70,7.74 L16.00,8.17 L15.30,8.59 L14.60,9.00 L13.90,9.38 L13.20,9.73 L12.50,10.05 L11.80,10.32 L11.10,10.55 L10.40,10.72 L9.70,10.83 L9.00,10.89 L8.30,10.89 L7.60,10.83 L6.90,10.71 L6.20,10.53 L5.50,10.29 L4.80,10.01 L4.10,9.67 L3.40,9.30 L2.70,8.88 L2.00,8.40Z' fill='%23a8884f' opacity='.3' transform='translate%281 .7%29'/%3E%3C/svg%3E") center/contain no-repeat}
+/* mobile home: hide collage */
+@media (max-width:700px){.collage{display:none}.hero-full{padding:56px 0 64px}#services{padding-top:64px!important}}
+
+/* ===== Home: hero waves + services overlapping the hero ===== */
+.hero-full{position:relative;overflow:hidden;padding-bottom:200px}
+.hero-full .container{position:relative;z-index:1}
+.hero-waves{position:absolute;left:0;right:0;bottom:70px;height:200px;pointer-events:none;z-index:0}
+.hero-waves .wave{position:absolute;left:0;top:0;width:200%;height:200px;background-repeat:repeat-x;background-size:50% 200px;animation:waveDrift 28s linear infinite}
+.hero-waves .w1{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2880' height='200' viewBox='0 0 2880 200'%3E%3Cpolyline points='0,100.0 8,101.3 16,102.5 24,103.7 32,105.0 40,106.2 48,107.3 56,108.5 64,109.5 72,110.6 80,111.6 88,112.5 96,113.4 104,114.2 112,114.9 120,115.6 128,116.2 136,116.7 144,117.1 152,117.5 160,117.7 168,117.9 176,118.0 184,118.0 192,117.9 200,117.7 208,117.5 216,117.1 224,116.7 232,116.2 240,115.6 248,114.9 256,114.2 264,113.4 272,112.5 280,111.6 288,110.6 296,109.5 304,108.5 312,107.3 320,106.2 328,105.0 336,103.7 344,102.5 352,101.3 360,100.0 368,98.7 376,97.5 384,96.3 392,95.0 400,93.8 408,92.7 416,91.5 424,90.5 432,89.4 440,88.4 448,87.5 456,86.6 464,85.8 472,85.1 480,84.4 488,83.8 496,83.3 504,82.9 512,82.5 520,82.3 528,82.1 536,82.0 544,82.0 552,82.1 560,82.3 568,82.5 576,82.9 584,83.3 592,83.8 600,84.4 608,85.1 616,85.8 624,86.6 632,87.5 640,88.4 648,89.4 656,90.5 664,91.5 672,92.7 680,93.8 688,95.0 696,96.3 704,97.5 712,98.7 720,100.0 728,101.3 736,102.5 744,103.7 752,105.0 760,106.2 768,107.3 776,108.5 784,109.5 792,110.6 800,111.6 808,112.5 816,113.4 824,114.2 832,114.9 840,115.6 848,116.2 856,116.7 864,117.1 872,117.5 880,117.7 888,117.9 896,118.0 904,118.0 912,117.9 920,117.7 928,117.5 936,117.1 944,116.7 952,116.2 960,115.6 968,114.9 976,114.2 984,113.4 992,112.5 1000,111.6 1008,110.6 1016,109.5 1024,108.5 1032,107.3 1040,106.2 1048,105.0 1056,103.7 1064,102.5 1072,101.3 1080,100.0 1088,98.7 1096,97.5 1104,96.3 1112,95.0 1120,93.8 1128,92.7 1136,91.5 1144,90.5 1152,89.4 1160,88.4 1168,87.5 1176,86.6 1184,85.8 1192,85.1 1200,84.4 1208,83.8 1216,83.3 1224,82.9 1232,82.5 1240,82.3 1248,82.1 1256,82.0 1264,82.0 1272,82.1 1280,82.3 1288,82.5 1296,82.9 1304,83.3 1312,83.8 1320,84.4 1328,85.1 1336,85.8 1344,86.6 1352,87.5 1360,88.4 1368,89.4 1376,90.5 1384,91.5 1392,92.7 1400,93.8 1408,95.0 1416,96.3 1424,97.5 1432,98.7 1440,100.0 1448,101.3 1456,102.5 1464,103.7 1472,105.0 1480,106.2 1488,107.3 1496,108.5 1504,109.5 1512,110.6 1520,111.6 1528,112.5 1536,113.4 1544,114.2 1552,114.9 1560,115.6 1568,116.2 1576,116.7 1584,117.1 1592,117.5 1600,117.7 1608,117.9 1616,118.0 1624,118.0 1632,117.9 1640,117.7 1648,117.5 1656,117.1 1664,116.7 1672,116.2 1680,115.6 1688,114.9 1696,114.2 1704,113.4 1712,112.5 1720,111.6 1728,110.6 1736,109.5 1744,108.5 1752,107.3 1760,106.2 1768,105.0 1776,103.7 1784,102.5 1792,101.3 1800,100.0 1808,98.7 1816,97.5 1824,96.3 1832,95.0 1840,93.8 1848,92.7 1856,91.5 1864,90.5 1872,89.4 1880,88.4 1888,87.5 1896,86.6 1904,85.8 1912,85.1 1920,84.4 1928,83.8 1936,83.3 1944,82.9 1952,82.5 1960,82.3 1968,82.1 1976,82.0 1984,82.0 1992,82.1 2000,82.3 2008,82.5 2016,82.9 2024,83.3 2032,83.8 2040,84.4 2048,85.1 2056,85.8 2064,86.6 2072,87.5 2080,88.4 2088,89.4 2096,90.5 2104,91.5 2112,92.7 2120,93.8 2128,95.0 2136,96.3 2144,97.5 2152,98.7 2160,100.0 2168,101.3 2176,102.5 2184,103.7 2192,105.0 2200,106.2 2208,107.3 2216,108.5 2224,109.5 2232,110.6 2240,111.6 2248,112.5 2256,113.4 2264,114.2 2272,114.9 2280,115.6 2288,116.2 2296,116.7 2304,117.1 2312,117.5 2320,117.7 2328,117.9 2336,118.0 2344,118.0 2352,117.9 2360,117.7 2368,117.5 2376,117.1 2384,116.7 2392,116.2 2400,115.6 2408,114.9 2416,114.2 2424,113.4 2432,112.5 2440,111.6 2448,110.6 2456,109.5 2464,108.5 2472,107.3 2480,106.2 2488,105.0 2496,103.7 2504,102.5 2512,101.3 2520,100.0 2528,98.7 2536,97.5 2544,96.3 2552,95.0 2560,93.8 2568,92.7 2576,91.5 2584,90.5 2592,89.4 2600,88.4 2608,87.5 2616,86.6 2624,85.8 2632,85.1 2640,84.4 2648,83.8 2656,83.3 2664,82.9 2672,82.5 2680,82.3 2688,82.1 2696,82.0 2704,82.0 2712,82.1 2720,82.3 2728,82.5 2736,82.9 2744,83.3 2752,83.8 2760,84.4 2768,85.1 2776,85.8 2784,86.6 2792,87.5 2800,88.4 2808,89.4 2816,90.5 2824,91.5 2832,92.7 2840,93.8 2848,95.0 2856,96.3 2864,97.5 2872,98.7 2880,100.0' fill='none' stroke='%23a8884f' stroke-width='1.2'/%3E%3C/svg%3E");top:-30px}
+.hero-waves .w2{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2880' height='200' viewBox='0 0 2880 200'%3E%3Cpolyline points='0,100.0 8,101.4 16,102.7 24,104.1 32,105.4 40,106.7 48,108.0 56,109.3 64,110.6 72,111.8 80,113.0 88,114.2 96,115.3 104,116.4 112,117.4 120,118.4 128,119.3 136,120.2 144,121.0 152,121.8 160,122.5 168,123.2 176,123.8 184,124.3 192,124.7 200,125.1 208,125.4 216,125.7 224,125.9 232,126.0 240,126.0 248,126.0 256,125.9 264,125.7 272,125.4 280,125.1 288,124.7 296,124.3 304,123.8 312,123.2 320,122.5 328,121.8 336,121.0 344,120.2 352,119.3 360,118.4 368,117.4 376,116.4 384,115.3 392,114.2 400,113.0 408,111.8 416,110.6 424,109.3 432,108.0 440,106.7 448,105.4 456,104.1 464,102.7 472,101.4 480,100.0 488,98.6 496,97.3 504,95.9 512,94.6 520,93.3 528,92.0 536,90.7 544,89.4 552,88.2 560,87.0 568,85.8 576,84.7 584,83.6 592,82.6 600,81.6 608,80.7 616,79.8 624,79.0 632,78.2 640,77.5 648,76.8 656,76.2 664,75.7 672,75.3 680,74.9 688,74.6 696,74.3 704,74.1 712,74.0 720,74.0 728,74.0 736,74.1 744,74.3 752,74.6 760,74.9 768,75.3 776,75.7 784,76.2 792,76.8 800,77.5 808,78.2 816,79.0 824,79.8 832,80.7 840,81.6 848,82.6 856,83.6 864,84.7 872,85.8 880,87.0 888,88.2 896,89.4 904,90.7 912,92.0 920,93.3 928,94.6 936,95.9 944,97.3 952,98.6 960,100.0 968,101.4 976,102.7 984,104.1 992,105.4 1000,106.7 1008,108.0 1016,109.3 1024,110.6 1032,111.8 1040,113.0 1048,114.2 1056,115.3 1064,116.4 1072,117.4 1080,118.4 1088,119.3 1096,120.2 1104,121.0 1112,121.8 1120,122.5 1128,123.2 1136,123.8 1144,124.3 1152,124.7 1160,125.1 1168,125.4 1176,125.7 1184,125.9 1192,126.0 1200,126.0 1208,126.0 1216,125.9 1224,125.7 1232,125.4 1240,125.1 1248,124.7 1256,124.3 1264,123.8 1272,123.2 1280,122.5 1288,121.8 1296,121.0 1304,120.2 1312,119.3 1320,118.4 1328,117.4 1336,116.4 1344,115.3 1352,114.2 1360,113.0 1368,111.8 1376,110.6 1384,109.3 1392,108.0 1400,106.7 1408,105.4 1416,104.1 1424,102.7 1432,101.4 1440,100.0 1448,98.6 1456,97.3 1464,95.9 1472,94.6 1480,93.3 1488,92.0 1496,90.7 1504,89.4 1512,88.2 1520,87.0 1528,85.8 1536,84.7 1544,83.6 1552,82.6 1560,81.6 1568,80.7 1576,79.8 1584,79.0 1592,78.2 1600,77.5 1608,76.8 1616,76.2 1624,75.7 1632,75.3 1640,74.9 1648,74.6 1656,74.3 1664,74.1 1672,74.0 1680,74.0 1688,74.0 1696,74.1 1704,74.3 1712,74.6 1720,74.9 1728,75.3 1736,75.7 1744,76.2 1752,76.8 1760,77.5 1768,78.2 1776,79.0 1784,79.8 1792,80.7 1800,81.6 1808,82.6 1816,83.6 1824,84.7 1832,85.8 1840,87.0 1848,88.2 1856,89.4 1864,90.7 1872,92.0 1880,93.3 1888,94.6 1896,95.9 1904,97.3 1912,98.6 1920,100.0 1928,101.4 1936,102.7 1944,104.1 1952,105.4 1960,106.7 1968,108.0 1976,109.3 1984,110.6 1992,111.8 2000,113.0 2008,114.2 2016,115.3 2024,116.4 2032,117.4 2040,118.4 2048,119.3 2056,120.2 2064,121.0 2072,121.8 2080,122.5 2088,123.2 2096,123.8 2104,124.3 2112,124.7 2120,125.1 2128,125.4 2136,125.7 2144,125.9 2152,126.0 2160,126.0 2168,126.0 2176,125.9 2184,125.7 2192,125.4 2200,125.1 2208,124.7 2216,124.3 2224,123.8 2232,123.2 2240,122.5 2248,121.8 2256,121.0 2264,120.2 2272,119.3 2280,118.4 2288,117.4 2296,116.4 2304,115.3 2312,114.2 2320,113.0 2328,111.8 2336,110.6 2344,109.3 2352,108.0 2360,106.7 2368,105.4 2376,104.1 2384,102.7 2392,101.4 2400,100.0 2408,98.6 2416,97.3 2424,95.9 2432,94.6 2440,93.3 2448,92.0 2456,90.7 2464,89.4 2472,88.2 2480,87.0 2488,85.8 2496,84.7 2504,83.6 2512,82.6 2520,81.6 2528,80.7 2536,79.8 2544,79.0 2552,78.2 2560,77.5 2568,76.8 2576,76.2 2584,75.7 2592,75.3 2600,74.9 2608,74.6 2616,74.3 2624,74.1 2632,74.0 2640,74.0 2648,74.0 2656,74.1 2664,74.3 2672,74.6 2680,74.9 2688,75.3 2696,75.7 2704,76.2 2712,76.8 2720,77.5 2728,78.2 2736,79.0 2744,79.8 2752,80.7 2760,81.6 2768,82.6 2776,83.6 2784,84.7 2792,85.8 2800,87.0 2808,88.2 2816,89.4 2824,90.7 2832,92.0 2840,93.3 2848,94.6 2856,95.9 2864,97.3 2872,98.6 2880,100.0' fill='none' stroke='%23c8b083' stroke-width='1'/%3E%3C/svg%3E");top:0;animation-duration:40s;animation-direction:reverse}
+.hero-waves .w3{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2880' height='200' viewBox='0 0 2880 200'%3E%3Cpolyline points='0,100.0 8,101.5 16,102.9 24,104.3 32,105.7 40,107.0 48,108.2 56,109.4 64,110.4 72,111.3 80,112.1 88,112.8 96,113.3 104,113.7 112,113.9 120,114.0 128,113.9 136,113.7 144,113.3 152,112.8 160,112.1 168,111.3 176,110.4 184,109.4 192,108.2 200,107.0 208,105.7 216,104.3 224,102.9 232,101.5 240,100.0 248,98.5 256,97.1 264,95.7 272,94.3 280,93.0 288,91.8 296,90.6 304,89.6 312,88.7 320,87.9 328,87.2 336,86.7 344,86.3 352,86.1 360,86.0 368,86.1 376,86.3 384,86.7 392,87.2 400,87.9 408,88.7 416,89.6 424,90.6 432,91.8 440,93.0 448,94.3 456,95.7 464,97.1 472,98.5 480,100.0 488,101.5 496,102.9 504,104.3 512,105.7 520,107.0 528,108.2 536,109.4 544,110.4 552,111.3 560,112.1 568,112.8 576,113.3 584,113.7 592,113.9 600,114.0 608,113.9 616,113.7 624,113.3 632,112.8 640,112.1 648,111.3 656,110.4 664,109.4 672,108.2 680,107.0 688,105.7 696,104.3 704,102.9 712,101.5 720,100.0 728,98.5 736,97.1 744,95.7 752,94.3 760,93.0 768,91.8 776,90.6 784,89.6 792,88.7 800,87.9 808,87.2 816,86.7 824,86.3 832,86.1 840,86.0 848,86.1 856,86.3 864,86.7 872,87.2 880,87.9 888,88.7 896,89.6 904,90.6 912,91.8 920,93.0 928,94.3 936,95.7 944,97.1 952,98.5 960,100.0 968,101.5 976,102.9 984,104.3 992,105.7 1000,107.0 1008,108.2 1016,109.4 1024,110.4 1032,111.3 1040,112.1 1048,112.8 1056,113.3 1064,113.7 1072,113.9 1080,114.0 1088,113.9 1096,113.7 1104,113.3 1112,112.8 1120,112.1 1128,111.3 1136,110.4 1144,109.4 1152,108.2 1160,107.0 1168,105.7 1176,104.3 1184,102.9 1192,101.5 1200,100.0 1208,98.5 1216,97.1 1224,95.7 1232,94.3 1240,93.0 1248,91.8 1256,90.6 1264,89.6 1272,88.7 1280,87.9 1288,87.2 1296,86.7 1304,86.3 1312,86.1 1320,86.0 1328,86.1 1336,86.3 1344,86.7 1352,87.2 1360,87.9 1368,88.7 1376,89.6 1384,90.6 1392,91.8 1400,93.0 1408,94.3 1416,95.7 1424,97.1 1432,98.5 1440,100.0 1448,101.5 1456,102.9 1464,104.3 1472,105.7 1480,107.0 1488,108.2 1496,109.4 1504,110.4 1512,111.3 1520,112.1 1528,112.8 1536,113.3 1544,113.7 1552,113.9 1560,114.0 1568,113.9 1576,113.7 1584,113.3 1592,112.8 1600,112.1 1608,111.3 1616,110.4 1624,109.4 1632,108.2 1640,107.0 1648,105.7 1656,104.3 1664,102.9 1672,101.5 1680,100.0 1688,98.5 1696,97.1 1704,95.7 1712,94.3 1720,93.0 1728,91.8 1736,90.6 1744,89.6 1752,88.7 1760,87.9 1768,87.2 1776,86.7 1784,86.3 1792,86.1 1800,86.0 1808,86.1 1816,86.3 1824,86.7 1832,87.2 1840,87.9 1848,88.7 1856,89.6 1864,90.6 1872,91.8 1880,93.0 1888,94.3 1896,95.7 1904,97.1 1912,98.5 1920,100.0 1928,101.5 1936,102.9 1944,104.3 1952,105.7 1960,107.0 1968,108.2 1976,109.4 1984,110.4 1992,111.3 2000,112.1 2008,112.8 2016,113.3 2024,113.7 2032,113.9 2040,114.0 2048,113.9 2056,113.7 2064,113.3 2072,112.8 2080,112.1 2088,111.3 2096,110.4 2104,109.4 2112,108.2 2120,107.0 2128,105.7 2136,104.3 2144,102.9 2152,101.5 2160,100.0 2168,98.5 2176,97.1 2184,95.7 2192,94.3 2200,93.0 2208,91.8 2216,90.6 2224,89.6 2232,88.7 2240,87.9 2248,87.2 2256,86.7 2264,86.3 2272,86.1 2280,86.0 2288,86.1 2296,86.3 2304,86.7 2312,87.2 2320,87.9 2328,88.7 2336,89.6 2344,90.6 2352,91.8 2360,93.0 2368,94.3 2376,95.7 2384,97.1 2392,98.5 2400,100.0 2408,101.5 2416,102.9 2424,104.3 2432,105.7 2440,107.0 2448,108.2 2456,109.4 2464,110.4 2472,111.3 2480,112.1 2488,112.8 2496,113.3 2504,113.7 2512,113.9 2520,114.0 2528,113.9 2536,113.7 2544,113.3 2552,112.8 2560,112.1 2568,111.3 2576,110.4 2584,109.4 2592,108.2 2600,107.0 2608,105.7 2616,104.3 2624,102.9 2632,101.5 2640,100.0 2648,98.5 2656,97.1 2664,95.7 2672,94.3 2680,93.0 2688,91.8 2696,90.6 2704,89.6 2712,88.7 2720,87.9 2728,87.2 2736,86.7 2744,86.3 2752,86.1 2760,86.0 2768,86.1 2776,86.3 2784,86.7 2792,87.2 2800,87.9 2808,88.7 2816,89.6 2824,90.6 2832,91.8 2840,93.0 2848,94.3 2856,95.7 2864,97.1 2872,98.5 2880,100.0' fill='none' stroke='%23771d51' stroke-width='0.8'/%3E%3C/svg%3E");top:30px;animation-duration:22s}
+@keyframes waveDrift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.hero-waves .wave{animation:none}}
+.services-overlap{position:relative;z-index:2;padding-top:0!important;margin-top:-150px;background:none}
+.services-overlap>.container{background:linear-gradient(180deg,#ffffff 0%,#fdfbf8 100%);padding:72px 64px 64px;box-shadow:0 40px 80px -50px #3a2d2580,0 1px 0 #efe8dd;border:1px solid #efe8dd}
+#services{padding-top:0!important}
+@media (max-width:900px){.hero-full{padding-bottom:150px}.hero-waves{bottom:50px;transform:scale(.8);transform-origin:left bottom}.services-overlap{margin-top:-100px}.services-overlap>.container{padding:48px 28px 44px;width:calc(100% - 32px)}}
+@media (max-width:700px){.hero-full{padding:56px 0 120px}.services-overlap{margin-top:-70px}.services-overlap>.container{padding:36px 20px 36px;width:calc(100% - 24px)}#services{padding-top:0!important}}
+.hero-waves{bottom:90px}.hero-waves .w1{opacity:.75}.hero-waves .w2{opacity:.6}.hero-waves .w3{opacity:.3}
+@media (max-width:700px){.hero-waves{bottom:40px}}
+.button-secondary{background:#fffdfa;border-color:#cdbda6}.button-secondary:hover{background:#fff}
+/* softer waves */
+.hero-waves .w1{opacity:.32}.hero-waves .w2{opacity:.26}.hero-waves .w3{opacity:.14}
+.hero-waves .w1{animation-duration:48s}.hero-waves .w2{animation-duration:64s}.hero-waves .w3{animation-duration:40s}
+/* white nav */
+.site-header,.has-overlay-header .site-header,.has-overlay-header.scrolled .site-header,.has-overlay-header:not(.scrolled) .site-header{background:#fff}
+@media (max-width:900px){.site-nav{background:#fff}}
