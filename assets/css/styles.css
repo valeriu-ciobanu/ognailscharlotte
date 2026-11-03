@@ -1377,3 +1377,37 @@ body{background-color:#f8f4ee;background-image:url("data:image/svg+xml,%3Csvg xm
 .cred-section .timeline h3{font-size:1.45rem}
 @media (max-width:760px){.cred-section .timeline{grid-template-columns:1fr}.cred-section .timeline li:last-child{padding-bottom:0}}
 .choose-single{display:block}.choose-single .explainer-card{max-width:820px}
+
+/* Advanced pedicure: concerns as a square white box */
+.checks.checks-white{background:#fff;border:1px solid #e8decf;border-radius:0;box-shadow:0 2px 4px #2a0f1f05,0 14px 40px #2a0f1f0a}
+/* Titanium wire section without the plum band */
+.wire-band.wire-light{color:var(--ink);background:radial-gradient(80% 60% at 0% 0%,#ffffff 0%,#ffffff00 60%),linear-gradient(170deg,#fffdfa 0%,#fbf8f3 100%)}
+.wire-light .wire-intro h2{color:var(--ink)}
+.wire-light .wire-intro h2 em{color:var(--plum)}
+.wire-light .wire-intro>p,.wire-light .wire-card p{color:var(--muted)}
+.wire-light .wire-intro .wire-note{color:var(--soft);border-left-color:var(--gold-soft)}
+.wire-band.wire-light .eyebrow{color:var(--gold-line)}
+.wire-band.wire-light .eyebrow::before{filter:none}
+.wire-light .wire-consult{background:#fff;border:1px solid #e8decf;border-radius:0;box-shadow:0 14px 40px #2a0f1f0a;color:var(--ink)}
+.wire-light .wire-consult strong{color:var(--ink)}
+.wire-light .wire-consult p{color:var(--muted)}
+.wire-light .wire-tag{background:#f1e9de;color:var(--plum)}
+.wire-light .wire-card .ba-img{box-shadow:0 24px 50px -28px #2a0f1f59}
+
+/* Larger footer text */
+.footer-brand p{font-size:1.0625rem}
+.site-footer h3{font-size:.8125rem}
+.site-footer li,.site-footer li a{font-size:1.0625rem}
+.footer-bottom,.footer-areas{font-size:.9375rem}
+
+/* Client reviews */
+.reviews-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
+.review-card{position:relative;margin:0;background:#fff;border:1px solid #e8decf;box-shadow:0 2px 4px #2a0f1f05,0 14px 40px #2a0f1f0a;padding:44px 40px 34px}
+.review-mark{position:absolute;top:10px;left:34px;font-family:var(--serif);font-size:4.5rem;line-height:1;color:var(--gold-soft)}
+.review-card blockquote{margin:22px 0 0;font-family:var(--serif);font-size:1.25rem;line-height:1.6;color:var(--ink)}
+.review-card blockquote p+p{margin-top:14px}
+.review-card figcaption{display:flex;flex-direction:column;gap:2px;margin-top:24px;padding-top:18px;border-top:1px solid #efe8dd}
+.review-card figcaption strong{font-weight:650;color:var(--ink)}
+.review-card figcaption span{font-size:.875rem;letter-spacing:.06em;color:var(--soft)}
+.review-feature{max-width:860px;margin:56px auto 0}
+@media (max-width:800px){.reviews-grid{grid-template-columns:1fr}.review-card{padding:40px 24px 28px}.review-mark{left:20px}.review-card blockquote{font-size:1.125rem}}
